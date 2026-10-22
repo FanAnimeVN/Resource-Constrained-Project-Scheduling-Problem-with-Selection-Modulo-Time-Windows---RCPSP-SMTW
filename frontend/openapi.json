@@ -1,0 +1,2895 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Hệ thống lập lộ trình học tập cá nhân hóa (RCPSP-SMTW)",
+    "description": "API gợi ý lộ trình đăng ký tín chỉ tối ưu, giải trình từng môn, báo cáo xung đột khi vô nghiệm và tư vấn chọn chuyên ngành. Dữ liệu mẫu mô phỏng CTĐT CNTT 138 TC của ĐH KHTN – ĐHQG-HCM.",
+    "version": "0.1.0"
+  },
+  "paths": {
+    "/api/health": {
+      "get": {
+        "summary": "Health",
+        "operationId": "health_api_health_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Response Health Api Health Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/datasets": {
+      "get": {
+        "summary": "Datasets",
+        "operationId": "datasets_api_datasets_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "$ref": "#/components/schemas/DatasetSummary"
+                  },
+                  "type": "array",
+                  "title": "Response Datasets Api Datasets Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/datasets/{ds_id}/curriculum": {
+      "get": {
+        "summary": "Curriculum",
+        "operationId": "curriculum_api_datasets__ds_id__curriculum_get",
+        "parameters": [
+          {
+            "name": "ds_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Ds Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CurriculumResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/datasets/{ds_id}/courses": {
+      "get": {
+        "summary": "Courses",
+        "operationId": "courses_api_datasets__ds_id__courses_get",
+        "parameters": [
+          {
+            "name": "ds_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Ds Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CatalogResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/datasets/{ds_id}/validation": {
+      "get": {
+        "summary": "Validation",
+        "operationId": "validation_api_datasets__ds_id__validation_get",
+        "parameters": [
+          {
+            "name": "ds_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Ds Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ValidationReport"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/datasets/{ds_id}/students": {
+      "get": {
+        "summary": "Students",
+        "operationId": "students_api_datasets__ds_id__students_get",
+        "parameters": [
+          {
+            "name": "ds_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Ds Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/StudentProfile"
+                  },
+                  "title": "Response Students Api Datasets  Ds Id  Students Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/datasets/{ds_id}/students/{student_id}": {
+      "get": {
+        "summary": "Student",
+        "operationId": "student_api_datasets__ds_id__students__student_id__get",
+        "parameters": [
+          {
+            "name": "ds_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Ds Id"
+            }
+          },
+          {
+            "name": "student_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Student Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/StudentProfile"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/plans": {
+      "post": {
+        "summary": "Plans",
+        "operationId": "plans_api_plans_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PlanRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PlanResult"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/advisor/specializations": {
+      "post": {
+        "summary": "Advisor",
+        "operationId": "advisor_api_advisor_specializations_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AdviceRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SpecializationAdvice"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/recommendations/next-term": {
+      "post": {
+        "summary": "Next Term",
+        "operationId": "next_term_api_recommendations_next_term_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NextTermRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/NextTermResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/what-if/fail": {
+      "post": {
+        "summary": "What If",
+        "operationId": "what_if_api_what_if_fail_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/WhatIfRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/WhatIfResult"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AcademicRecord": {
+        "properties": {
+          "course": {
+            "type": "string",
+            "title": "Course"
+          },
+          "status": {
+            "$ref": "#/components/schemas/RecordStatus"
+          },
+          "grade": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 10.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Grade"
+          },
+          "term": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Term"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "type": "object",
+        "required": [
+          "course",
+          "status"
+        ],
+        "title": "AcademicRecord"
+      },
+      "AdviceRequest": {
+        "properties": {
+          "dataset": {
+            "type": "string",
+            "title": "Dataset",
+            "default": "hcmus_cntt_k2020"
+          },
+          "regulation": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Regulation"
+          },
+          "student_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Student Id",
+            "description": "Mã SV mẫu trong dataset"
+          },
+          "student": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/StudentProfile"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Hồ sơ SV gửi trực tiếp (ưu tiên hơn student_id)"
+          },
+          "preferences": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Preferences"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "weights": {
+            "anyOf": [
+              {
+                "additionalProperties": {
+                  "type": "number"
+                },
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Weights"
+          },
+          "interests": {
+            "anyOf": [
+              {
+                "additionalProperties": {
+                  "type": "integer"
+                },
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Interests"
+          },
+          "career_goals": {
+            "anyOf": [
+              {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Career Goals"
+          }
+        },
+        "type": "object",
+        "title": "AdviceRequest"
+      },
+      "BlockCourse": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "mandatory": {
+            "type": "boolean",
+            "title": "Mandatory",
+            "default": false
+          }
+        },
+        "type": "object",
+        "required": [
+          "id"
+        ],
+        "title": "BlockCourse"
+      },
+      "BlockProgress": {
+        "properties": {
+          "block_id": {
+            "type": "string",
+            "title": "Block Id"
+          },
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "depth": {
+            "type": "integer",
+            "title": "Depth"
+          },
+          "required": {
+            "type": "integer",
+            "title": "Required"
+          },
+          "passed_credits": {
+            "type": "integer",
+            "title": "Passed Credits"
+          },
+          "planned_credits": {
+            "type": "integer",
+            "title": "Planned Credits"
+          }
+        },
+        "type": "object",
+        "required": [
+          "block_id",
+          "name",
+          "depth",
+          "required",
+          "passed_credits",
+          "planned_credits"
+        ],
+        "title": "BlockProgress"
+      },
+      "CatalogResponse": {
+        "properties": {
+          "courses": {
+            "items": {
+              "$ref": "#/components/schemas/CourseInfo"
+            },
+            "type": "array",
+            "title": "Courses"
+          },
+          "dependencies": {
+            "items": {
+              "$ref": "#/components/schemas/Dependency"
+            },
+            "type": "array",
+            "title": "Dependencies"
+          }
+        },
+        "type": "object",
+        "required": [
+          "courses",
+          "dependencies"
+        ],
+        "title": "CatalogResponse"
+      },
+      "Comparison": {
+        "properties": {
+          "rows": {
+            "items": {
+              "$ref": "#/components/schemas/ComparisonRow"
+            },
+            "type": "array",
+            "title": "Rows"
+          },
+          "distances": {
+            "additionalProperties": {
+              "additionalProperties": {
+                "type": "integer"
+              },
+              "type": "object"
+            },
+            "type": "object",
+            "title": "Distances"
+          }
+        },
+        "type": "object",
+        "required": [
+          "rows",
+          "distances"
+        ],
+        "title": "Comparison"
+      },
+      "ComparisonRow": {
+        "properties": {
+          "plan_id": {
+            "type": "string",
+            "title": "Plan Id"
+          },
+          "strategy": {
+            "$ref": "#/components/schemas/Strategy"
+          },
+          "title": {
+            "type": "string",
+            "title": "Title"
+          },
+          "metrics": {
+            "$ref": "#/components/schemas/PlanMetrics"
+          },
+          "duplicate_of": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Duplicate Of"
+          }
+        },
+        "type": "object",
+        "required": [
+          "plan_id",
+          "strategy",
+          "title",
+          "metrics"
+        ],
+        "title": "ComparisonRow"
+      },
+      "Conflict": {
+        "properties": {
+          "code": {
+            "type": "string",
+            "title": "Code"
+          },
+          "message": {
+            "type": "string",
+            "title": "Message"
+          },
+          "courses": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Courses"
+          },
+          "terms": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Terms"
+          },
+          "relaxable": {
+            "type": "boolean",
+            "title": "Relaxable",
+            "default": false
+          }
+        },
+        "type": "object",
+        "required": [
+          "code",
+          "message"
+        ],
+        "title": "Conflict"
+      },
+      "Course": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "credits": {
+            "type": "integer",
+            "exclusiveMinimum": 0.0,
+            "title": "Credits"
+          },
+          "workload": {
+            "type": "integer",
+            "maximum": 5.0,
+            "minimum": 1.0,
+            "title": "Workload",
+            "default": 3
+          },
+          "tags": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Tags"
+          },
+          "is_active": {
+            "type": "boolean",
+            "title": "Is Active",
+            "default": true
+          },
+          "min_accumulated_credits": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Min Accumulated Credits"
+          },
+          "final_term_only": {
+            "type": "boolean",
+            "title": "Final Term Only",
+            "default": false
+          },
+          "min_gpa": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Min Gpa"
+          },
+          "historical_fail_rate": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 1.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Historical Fail Rate"
+          },
+          "counts_toward_total": {
+            "type": "boolean",
+            "title": "Counts Toward Total",
+            "default": true
+          },
+          "source": {
+            "type": "string",
+            "title": "Source",
+            "default": "sample"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "credits"
+        ],
+        "title": "Course"
+      },
+      "CourseInfo": {
+        "properties": {
+          "course": {
+            "$ref": "#/components/schemas/Course"
+          },
+          "offering": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Offering"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "blocks": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Blocks"
+          }
+        },
+        "type": "object",
+        "required": [
+          "course",
+          "offering",
+          "blocks"
+        ],
+        "title": "CourseInfo"
+      },
+      "CourseSuggestion": {
+        "properties": {
+          "course_id": {
+            "type": "string",
+            "title": "Course Id"
+          },
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "credits": {
+            "type": "integer",
+            "title": "Credits"
+          },
+          "mandatory": {
+            "type": "boolean",
+            "title": "Mandatory"
+          },
+          "block": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Block"
+          },
+          "score": {
+            "type": "number",
+            "title": "Score",
+            "default": 0.0
+          },
+          "badges": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Badges"
+          },
+          "reasons": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Reasons"
+          }
+        },
+        "type": "object",
+        "required": [
+          "course_id",
+          "name",
+          "credits",
+          "mandatory"
+        ],
+        "title": "CourseSuggestion"
+      },
+      "Curriculum": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "total_credits_required": {
+            "type": "integer",
+            "title": "Total Credits Required",
+            "default": 138
+          },
+          "credit_rule": {
+            "type": "string",
+            "enum": [
+              "at_least",
+              "exact"
+            ],
+            "title": "Credit Rule",
+            "default": "at_least"
+          },
+          "standard_main_terms": {
+            "type": "integer",
+            "title": "Standard Main Terms",
+            "default": 8
+          },
+          "blocks": {
+            "items": {
+              "$ref": "#/components/schemas/KnowledgeBlock"
+            },
+            "type": "array",
+            "title": "Blocks"
+          },
+          "specializations": {
+            "items": {
+              "$ref": "#/components/schemas/Specialization"
+            },
+            "type": "array",
+            "title": "Specializations"
+          },
+          "graduation_conditions": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Graduation Conditions"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "blocks"
+        ],
+        "title": "Curriculum"
+      },
+      "CurriculumResponse": {
+        "properties": {
+          "curriculum": {
+            "$ref": "#/components/schemas/Curriculum"
+          },
+          "block_kind": {
+            "additionalProperties": {
+              "type": "string"
+            },
+            "type": "object",
+            "title": "Block Kind"
+          },
+          "block_specialization": {
+            "additionalProperties": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "type": "object",
+            "title": "Block Specialization"
+          }
+        },
+        "type": "object",
+        "required": [
+          "curriculum",
+          "block_kind",
+          "block_specialization"
+        ],
+        "title": "CurriculumResponse"
+      },
+      "DatasetSummary": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "total_credits_required": {
+            "type": "integer",
+            "title": "Total Credits Required"
+          },
+          "courses": {
+            "type": "integer",
+            "title": "Courses"
+          },
+          "dependencies": {
+            "type": "integer",
+            "title": "Dependencies"
+          },
+          "regulations": {
+            "items": {
+              "$ref": "#/components/schemas/RegulationSummary"
+            },
+            "type": "array",
+            "title": "Regulations"
+          },
+          "students": {
+            "items": {
+              "$ref": "#/components/schemas/StudentSummary"
+            },
+            "type": "array",
+            "title": "Students"
+          },
+          "specializations": {
+            "items": {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            "type": "array",
+            "title": "Specializations"
+          },
+          "topics": {
+            "additionalProperties": {
+              "type": "string"
+            },
+            "type": "object",
+            "title": "Topics"
+          },
+          "careers": {
+            "additionalProperties": {
+              "type": "string"
+            },
+            "type": "object",
+            "title": "Careers"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "total_credits_required",
+          "courses",
+          "dependencies",
+          "regulations",
+          "students",
+          "specializations",
+          "topics",
+          "careers"
+        ],
+        "title": "DatasetSummary"
+      },
+      "Dependency": {
+        "properties": {
+          "source": {
+            "type": "string",
+            "title": "Source"
+          },
+          "target": {
+            "type": "string",
+            "title": "Target"
+          },
+          "type": {
+            "$ref": "#/components/schemas/DependencyType"
+          },
+          "min_grade": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Min Grade"
+          },
+          "note": {
+            "type": "string",
+            "title": "Note",
+            "default": "sample"
+          }
+        },
+        "type": "object",
+        "required": [
+          "source",
+          "target",
+          "type"
+        ],
+        "title": "Dependency"
+      },
+      "DependencyType": {
+        "type": "string",
+        "enum": [
+          "PREREQUISITE",
+          "PRE_COURSE",
+          "CO_REQUISITE",
+          "MUTUALLY_EXCLUSIVE"
+        ],
+        "title": "DependencyType"
+      },
+      "Explanation": {
+        "properties": {
+          "selection_kind": {
+            "type": "string",
+            "enum": [
+              "MANDATORY",
+              "ELECTIVE",
+              "REQUIRED_AS_PREREQ",
+              "OTHER"
+            ],
+            "title": "Selection Kind"
+          },
+          "selection": {
+            "items": {
+              "$ref": "#/components/schemas/Reason"
+            },
+            "type": "array",
+            "title": "Selection"
+          },
+          "timing": {
+            "items": {
+              "$ref": "#/components/schemas/Reason"
+            },
+            "type": "array",
+            "title": "Timing"
+          },
+          "earliest_term": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Earliest Term"
+          },
+          "delayed_by_strategy": {
+            "type": "boolean",
+            "title": "Delayed By Strategy",
+            "default": false
+          },
+          "requires": {
+            "items": {
+              "$ref": "#/components/schemas/Reason"
+            },
+            "type": "array",
+            "title": "Requires"
+          },
+          "unlocks": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Unlocks"
+          },
+          "on_critical_path": {
+            "type": "boolean",
+            "title": "On Critical Path",
+            "default": false
+          },
+          "risk_score": {
+            "type": "integer",
+            "title": "Risk Score",
+            "default": 0
+          },
+          "risk_factors": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Risk Factors"
+          },
+          "retake_safe": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Retake Safe"
+          },
+          "retake_term": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Retake Term"
+          }
+        },
+        "type": "object",
+        "required": [
+          "selection_kind"
+        ],
+        "title": "Explanation"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "InfeasibilityReport": {
+        "properties": {
+          "summary": {
+            "type": "string",
+            "title": "Summary"
+          },
+          "prechecks": {
+            "items": {
+              "$ref": "#/components/schemas/Issue"
+            },
+            "type": "array",
+            "title": "Prechecks"
+          },
+          "conflicts": {
+            "items": {
+              "$ref": "#/components/schemas/Conflict"
+            },
+            "type": "array",
+            "title": "Conflicts"
+          },
+          "minimal": {
+            "type": "boolean",
+            "title": "Minimal",
+            "default": true
+          },
+          "suggestions": {
+            "items": {
+              "$ref": "#/components/schemas/Suggestion"
+            },
+            "type": "array",
+            "title": "Suggestions"
+          }
+        },
+        "type": "object",
+        "required": [
+          "summary"
+        ],
+        "title": "InfeasibilityReport"
+      },
+      "Issue": {
+        "properties": {
+          "code": {
+            "type": "string",
+            "title": "Code"
+          },
+          "severity": {
+            "$ref": "#/components/schemas/Severity",
+            "default": "ERROR"
+          },
+          "message": {
+            "type": "string",
+            "title": "Message"
+          },
+          "courses": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Courses"
+          },
+          "terms": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Terms"
+          }
+        },
+        "type": "object",
+        "required": [
+          "code",
+          "message"
+        ],
+        "title": "Issue"
+      },
+      "KnowledgeBlock": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "rule": {
+            "$ref": "#/components/schemas/SelectionRule",
+            "default": "MIN_CREDITS"
+          },
+          "required_credits": {
+            "type": "integer",
+            "title": "Required Credits",
+            "default": 0
+          },
+          "k": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "K"
+          },
+          "specialization": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Specialization"
+          },
+          "specialization_group": {
+            "type": "boolean",
+            "title": "Specialization Group",
+            "default": false
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "general",
+              "foundation",
+              "major",
+              "free",
+              "graduation",
+              "other"
+            ],
+            "title": "Kind",
+            "default": "other"
+          },
+          "children": {
+            "items": {
+              "$ref": "#/components/schemas/KnowledgeBlock"
+            },
+            "type": "array",
+            "title": "Children"
+          },
+          "courses": {
+            "items": {
+              "$ref": "#/components/schemas/BlockCourse"
+            },
+            "type": "array",
+            "title": "Courses"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "name"
+        ],
+        "title": "KnowledgeBlock"
+      },
+      "NextTermAdvice": {
+        "properties": {
+          "term": {
+            "type": "string",
+            "title": "Term"
+          },
+          "plan_id": {
+            "type": "string",
+            "title": "Plan Id"
+          },
+          "recommended": {
+            "items": {
+              "$ref": "#/components/schemas/CourseSuggestion"
+            },
+            "type": "array",
+            "title": "Recommended"
+          },
+          "alternatives": {
+            "items": {
+              "$ref": "#/components/schemas/CourseSuggestion"
+            },
+            "type": "array",
+            "title": "Alternatives"
+          },
+          "total_credits": {
+            "type": "integer",
+            "title": "Total Credits"
+          },
+          "min_credits": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Min Credits"
+          },
+          "max_credits": {
+            "type": "integer",
+            "title": "Max Credits"
+          },
+          "warnings": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Warnings"
+          }
+        },
+        "type": "object",
+        "required": [
+          "term",
+          "plan_id",
+          "recommended",
+          "alternatives",
+          "total_credits",
+          "min_credits",
+          "max_credits"
+        ],
+        "title": "NextTermAdvice"
+      },
+      "NextTermRequest": {
+        "properties": {
+          "dataset": {
+            "type": "string",
+            "title": "Dataset",
+            "default": "hcmus_cntt_k2020"
+          },
+          "regulation": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Regulation"
+          },
+          "student_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Student Id",
+            "description": "Mã SV mẫu trong dataset"
+          },
+          "student": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/StudentProfile"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Hồ sơ SV gửi trực tiếp (ưu tiên hơn student_id)"
+          },
+          "preferences": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Preferences"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "strategy": {
+            "$ref": "#/components/schemas/Strategy",
+            "default": "PERSONALIZED"
+          }
+        },
+        "type": "object",
+        "title": "NextTermRequest"
+      },
+      "NextTermResponse": {
+        "properties": {
+          "status": {
+            "type": "string",
+            "title": "Status"
+          },
+          "advice": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/NextTermAdvice"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "plan_result": {
+            "$ref": "#/components/schemas/PlanResult"
+          }
+        },
+        "type": "object",
+        "required": [
+          "status",
+          "plan_result"
+        ],
+        "title": "NextTermResponse"
+      },
+      "ObjectiveWeights": {
+        "properties": {
+          "fast": {
+            "type": "number",
+            "title": "Fast",
+            "default": 0.25
+          },
+          "balance": {
+            "type": "number",
+            "title": "Balance",
+            "default": 0.35
+          },
+          "risk": {
+            "type": "number",
+            "title": "Risk",
+            "default": 0.25
+          },
+          "interest": {
+            "type": "number",
+            "title": "Interest",
+            "default": 0.15
+          }
+        },
+        "type": "object",
+        "title": "ObjectiveWeights"
+      },
+      "Offering": {
+        "properties": {
+          "course": {
+            "type": "string",
+            "title": "Course"
+          },
+          "terms": {
+            "items": {
+              "$ref": "#/components/schemas/TermKind"
+            },
+            "type": "array",
+            "title": "Terms"
+          },
+          "year_parity": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "odd",
+                  "even"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Year Parity"
+          }
+        },
+        "type": "object",
+        "required": [
+          "course",
+          "terms"
+        ],
+        "title": "Offering",
+        "description": "Quy tắc mở môn. `year_parity` áp lên năm bắt đầu của năm học."
+      },
+      "PinnedCourse": {
+        "properties": {
+          "course": {
+            "type": "string",
+            "title": "Course"
+          },
+          "term": {
+            "$ref": "#/components/schemas/Term"
+          }
+        },
+        "type": "object",
+        "required": [
+          "course",
+          "term"
+        ],
+        "title": "PinnedCourse"
+      },
+      "Plan": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "strategy": {
+            "$ref": "#/components/schemas/Strategy"
+          },
+          "title": {
+            "type": "string",
+            "title": "Title"
+          },
+          "specialization": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Specialization"
+          },
+          "specialization_name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Specialization Name"
+          },
+          "terms": {
+            "items": {
+              "$ref": "#/components/schemas/PlanTerm"
+            },
+            "type": "array",
+            "title": "Terms"
+          },
+          "passed_assignment": {
+            "additionalProperties": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "type": "object",
+            "title": "Passed Assignment"
+          },
+          "block_progress": {
+            "items": {
+              "$ref": "#/components/schemas/BlockProgress"
+            },
+            "type": "array",
+            "title": "Block Progress"
+          },
+          "metrics": {
+            "$ref": "#/components/schemas/PlanMetrics"
+          },
+          "highlights": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Highlights"
+          },
+          "duplicate_of": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Duplicate Of"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "strategy",
+          "title",
+          "specialization",
+          "terms",
+          "metrics"
+        ],
+        "title": "Plan"
+      },
+      "PlanMetrics": {
+        "properties": {
+          "graduation_term": {
+            "type": "string",
+            "title": "Graduation Term"
+          },
+          "graduation_index": {
+            "type": "integer",
+            "title": "Graduation Index"
+          },
+          "main_terms_remaining": {
+            "type": "integer",
+            "title": "Main Terms Remaining"
+          },
+          "total_main_terms": {
+            "type": "integer",
+            "title": "Total Main Terms"
+          },
+          "planned_credits": {
+            "type": "integer",
+            "title": "Planned Credits"
+          },
+          "total_credits": {
+            "type": "integer",
+            "title": "Total Credits"
+          },
+          "surplus_credits": {
+            "type": "integer",
+            "title": "Surplus Credits"
+          },
+          "load_std": {
+            "type": "number",
+            "title": "Load Std"
+          },
+          "load_max": {
+            "type": "integer",
+            "title": "Load Max"
+          },
+          "load_min": {
+            "type": "integer",
+            "title": "Load Min"
+          },
+          "peak_workload": {
+            "type": "integer",
+            "title": "Peak Workload"
+          },
+          "summers_used": {
+            "type": "integer",
+            "title": "Summers Used"
+          },
+          "risk_coverage": {
+            "type": "number",
+            "title": "Risk Coverage"
+          },
+          "interest_score": {
+            "type": "number",
+            "title": "Interest Score"
+          },
+          "focus_ratio": {
+            "type": "number",
+            "title": "Focus Ratio"
+          },
+          "solver_status": {
+            "type": "string",
+            "title": "Solver Status"
+          },
+          "solve_ms": {
+            "type": "integer",
+            "title": "Solve Ms"
+          }
+        },
+        "type": "object",
+        "required": [
+          "graduation_term",
+          "graduation_index",
+          "main_terms_remaining",
+          "total_main_terms",
+          "planned_credits",
+          "total_credits",
+          "surplus_credits",
+          "load_std",
+          "load_max",
+          "load_min",
+          "peak_workload",
+          "summers_used",
+          "risk_coverage",
+          "interest_score",
+          "focus_ratio",
+          "solver_status",
+          "solve_ms"
+        ],
+        "title": "PlanMetrics"
+      },
+      "PlanRequest": {
+        "properties": {
+          "dataset": {
+            "type": "string",
+            "title": "Dataset",
+            "default": "hcmus_cntt_k2020"
+          },
+          "regulation": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Regulation"
+          },
+          "student_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Student Id",
+            "description": "Mã SV mẫu trong dataset"
+          },
+          "student": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/StudentProfile"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Hồ sơ SV gửi trực tiếp (ưu tiên hơn student_id)"
+          },
+          "preferences": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Preferences"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "strategies": {
+            "anyOf": [
+              {
+                "items": {
+                  "$ref": "#/components/schemas/Strategy"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Strategies"
+          },
+          "explain": {
+            "type": "boolean",
+            "title": "Explain",
+            "default": true
+          }
+        },
+        "type": "object",
+        "title": "PlanRequest"
+      },
+      "PlanResult": {
+        "properties": {
+          "status": {
+            "type": "string",
+            "title": "Status"
+          },
+          "student_id": {
+            "type": "string",
+            "title": "Student Id"
+          },
+          "dataset": {
+            "type": "string",
+            "title": "Dataset"
+          },
+          "regulation": {
+            "type": "string",
+            "title": "Regulation"
+          },
+          "specialization": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Specialization"
+          },
+          "specialization_name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Specialization Name"
+          },
+          "specialization_source": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Specialization Source"
+          },
+          "plans": {
+            "items": {
+              "$ref": "#/components/schemas/Plan"
+            },
+            "type": "array",
+            "title": "Plans"
+          },
+          "comparison": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Comparison"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "infeasibility": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/InfeasibilityReport"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "validation": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/ValidationReport"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "warnings": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Warnings"
+          },
+          "graduation_conditions": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Graduation Conditions"
+          },
+          "gpa": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Gpa"
+          },
+          "passed_credits": {
+            "type": "integer",
+            "title": "Passed Credits",
+            "default": 0
+          },
+          "timings_ms": {
+            "additionalProperties": {
+              "type": "integer"
+            },
+            "type": "object",
+            "title": "Timings Ms"
+          }
+        },
+        "type": "object",
+        "required": [
+          "status",
+          "student_id",
+          "dataset",
+          "regulation"
+        ],
+        "title": "PlanResult"
+      },
+      "PlanTerm": {
+        "properties": {
+          "index": {
+            "type": "integer",
+            "title": "Index"
+          },
+          "term": {
+            "$ref": "#/components/schemas/Term"
+          },
+          "label": {
+            "type": "string",
+            "title": "Label"
+          },
+          "is_main": {
+            "type": "boolean",
+            "title": "Is Main"
+          },
+          "credits": {
+            "type": "integer",
+            "title": "Credits"
+          },
+          "workload": {
+            "type": "integer",
+            "title": "Workload"
+          },
+          "min_credits": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Min Credits"
+          },
+          "max_credits": {
+            "type": "integer",
+            "title": "Max Credits"
+          },
+          "courses": {
+            "items": {
+              "$ref": "#/components/schemas/ScheduledCourse"
+            },
+            "type": "array",
+            "title": "Courses"
+          }
+        },
+        "type": "object",
+        "required": [
+          "index",
+          "term",
+          "label",
+          "is_main",
+          "credits",
+          "workload",
+          "min_credits",
+          "max_credits",
+          "courses"
+        ],
+        "title": "PlanTerm"
+      },
+      "Preferences": {
+        "properties": {
+          "summer_enabled": {
+            "type": "boolean",
+            "title": "Summer Enabled",
+            "default": false
+          },
+          "personal_max_credits": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Personal Max Credits"
+          },
+          "target_graduation_term": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Term"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "specialization": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Specialization"
+          },
+          "pinned": {
+            "items": {
+              "$ref": "#/components/schemas/PinnedCourse"
+            },
+            "type": "array",
+            "title": "Pinned"
+          },
+          "excluded": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Excluded"
+          },
+          "objective_weights": {
+            "$ref": "#/components/schemas/ObjectiveWeights"
+          },
+          "assume_in_progress_pass": {
+            "type": "boolean",
+            "title": "Assume In Progress Pass",
+            "default": true
+          }
+        },
+        "type": "object",
+        "title": "Preferences"
+      },
+      "Reason": {
+        "properties": {
+          "code": {
+            "type": "string",
+            "title": "Code"
+          },
+          "message": {
+            "type": "string",
+            "title": "Message"
+          },
+          "courses": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Courses"
+          },
+          "terms": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Terms"
+          }
+        },
+        "type": "object",
+        "required": [
+          "code",
+          "message"
+        ],
+        "title": "Reason"
+      },
+      "RecordStatus": {
+        "type": "string",
+        "enum": [
+          "PASSED",
+          "FAILED",
+          "EXEMPTED",
+          "IN_PROGRESS"
+        ],
+        "title": "RecordStatus"
+      },
+      "RegulationSummary": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "min_credits_main": {
+            "type": "integer",
+            "title": "Min Credits Main"
+          },
+          "max_credits_main": {
+            "type": "integer",
+            "title": "Max Credits Main"
+          },
+          "max_credits_summer": {
+            "type": "integer",
+            "title": "Max Credits Summer"
+          },
+          "max_main_terms": {
+            "type": "integer",
+            "title": "Max Main Terms"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "min_credits_main",
+          "max_credits_main",
+          "max_credits_summer",
+          "max_main_terms"
+        ],
+        "title": "RegulationSummary"
+      },
+      "ScheduledCourse": {
+        "properties": {
+          "course_id": {
+            "type": "string",
+            "title": "Course Id"
+          },
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "credits": {
+            "type": "integer",
+            "title": "Credits"
+          },
+          "workload": {
+            "type": "integer",
+            "title": "Workload"
+          },
+          "counted_block": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Counted Block"
+          },
+          "block_kind": {
+            "type": "string",
+            "title": "Block Kind",
+            "default": "other"
+          },
+          "tags": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Tags"
+          },
+          "badges": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Badges"
+          },
+          "explanation": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Explanation"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "type": "object",
+        "required": [
+          "course_id",
+          "name",
+          "credits",
+          "workload",
+          "counted_block"
+        ],
+        "title": "ScheduledCourse"
+      },
+      "ScoreComponents": {
+        "properties": {
+          "academic": {
+            "type": "number",
+            "title": "Academic"
+          },
+          "interest": {
+            "type": "number",
+            "title": "Interest"
+          },
+          "career": {
+            "type": "number",
+            "title": "Career"
+          },
+          "progress": {
+            "type": "number",
+            "title": "Progress"
+          }
+        },
+        "type": "object",
+        "required": [
+          "academic",
+          "interest",
+          "career",
+          "progress"
+        ],
+        "title": "ScoreComponents"
+      },
+      "SelectionRule": {
+        "type": "string",
+        "enum": [
+          "ALL_MANDATORY",
+          "MIN_CREDITS",
+          "PICK_K_OF_N"
+        ],
+        "title": "SelectionRule"
+      },
+      "Severity": {
+        "type": "string",
+        "enum": [
+          "ERROR",
+          "WARNING"
+        ],
+        "title": "Severity"
+      },
+      "Specialization": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "block_id": {
+            "type": "string",
+            "title": "Block Id"
+          },
+          "description": {
+            "type": "string",
+            "title": "Description",
+            "default": ""
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "block_id"
+        ],
+        "title": "Specialization"
+      },
+      "SpecializationAdvice": {
+        "properties": {
+          "student_id": {
+            "type": "string",
+            "title": "Student Id"
+          },
+          "weights": {
+            "additionalProperties": {
+              "type": "number"
+            },
+            "type": "object",
+            "title": "Weights"
+          },
+          "ranking": {
+            "items": {
+              "$ref": "#/components/schemas/SpecializationScore"
+            },
+            "type": "array",
+            "title": "Ranking"
+          },
+          "top": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Top"
+          },
+          "stable": {
+            "type": "boolean",
+            "title": "Stable"
+          },
+          "stability_note": {
+            "type": "string",
+            "title": "Stability Note"
+          },
+          "gpa": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Gpa"
+          }
+        },
+        "type": "object",
+        "required": [
+          "student_id",
+          "weights",
+          "ranking",
+          "top",
+          "stable",
+          "stability_note",
+          "gpa"
+        ],
+        "title": "SpecializationAdvice"
+      },
+      "SpecializationScore": {
+        "properties": {
+          "rank": {
+            "type": "integer",
+            "title": "Rank",
+            "default": 0
+          },
+          "specialization": {
+            "type": "string",
+            "title": "Specialization"
+          },
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "description": {
+            "type": "string",
+            "title": "Description",
+            "default": ""
+          },
+          "score": {
+            "type": "number",
+            "title": "Score"
+          },
+          "components": {
+            "$ref": "#/components/schemas/ScoreComponents"
+          },
+          "confidence": {
+            "type": "string",
+            "title": "Confidence"
+          },
+          "feasible": {
+            "type": "boolean",
+            "title": "Feasible"
+          },
+          "graduation_term": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Graduation Term"
+          },
+          "graduation_index": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Graduation Index"
+          },
+          "terms_vs_best": {
+            "type": "integer",
+            "title": "Terms Vs Best",
+            "default": 0
+          },
+          "reused_credits": {
+            "type": "integer",
+            "title": "Reused Credits",
+            "default": 0
+          },
+          "reasons": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Reasons"
+          }
+        },
+        "type": "object",
+        "required": [
+          "specialization",
+          "name",
+          "score",
+          "components",
+          "confidence",
+          "feasible"
+        ],
+        "title": "SpecializationScore"
+      },
+      "Strategy": {
+        "type": "string",
+        "enum": [
+          "FAST_TRACK",
+          "BALANCED",
+          "RISK_AVERSE",
+          "SPECIALIZATION_FOCUS",
+          "PERSONALIZED"
+        ],
+        "title": "Strategy"
+      },
+      "StudentProfile": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "cohort_year": {
+            "type": "integer",
+            "title": "Cohort Year"
+          },
+          "curriculum_id": {
+            "type": "string",
+            "title": "Curriculum Id"
+          },
+          "next_term": {
+            "$ref": "#/components/schemas/Term"
+          },
+          "records": {
+            "items": {
+              "$ref": "#/components/schemas/AcademicRecord"
+            },
+            "type": "array",
+            "title": "Records"
+          },
+          "academic_warning": {
+            "type": "boolean",
+            "title": "Academic Warning",
+            "default": false
+          },
+          "declared_specialization": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Declared Specialization"
+          },
+          "interests": {
+            "additionalProperties": {
+              "type": "integer"
+            },
+            "type": "object",
+            "title": "Interests"
+          },
+          "career_goals": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Career Goals"
+          },
+          "preferences": {
+            "$ref": "#/components/schemas/Preferences"
+          },
+          "note": {
+            "type": "string",
+            "title": "Note",
+            "default": ""
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "cohort_year",
+          "curriculum_id",
+          "next_term"
+        ],
+        "title": "StudentProfile"
+      },
+      "StudentSummary": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "note": {
+            "type": "string",
+            "title": "Note"
+          },
+          "cohort_year": {
+            "type": "integer",
+            "title": "Cohort Year"
+          },
+          "next_term": {
+            "type": "string",
+            "title": "Next Term"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "note",
+          "cohort_year",
+          "next_term"
+        ],
+        "title": "StudentSummary"
+      },
+      "Suggestion": {
+        "properties": {
+          "code": {
+            "type": "string",
+            "title": "Code"
+          },
+          "message": {
+            "type": "string",
+            "title": "Message"
+          },
+          "graduation_term": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Graduation Term"
+          }
+        },
+        "type": "object",
+        "required": [
+          "code",
+          "message"
+        ],
+        "title": "Suggestion"
+      },
+      "Term": {
+        "properties": {
+          "year": {
+            "type": "integer",
+            "title": "Year"
+          },
+          "kind": {
+            "$ref": "#/components/schemas/TermKind"
+          }
+        },
+        "type": "object",
+        "required": [
+          "year",
+          "kind"
+        ],
+        "title": "Term",
+        "description": "Một học kỳ: năm bắt đầu của năm học + loại kỳ. Ví dụ (2026, HK1) = HK1 2026–2027."
+      },
+      "TermKind": {
+        "type": "string",
+        "enum": [
+          "HK1",
+          "HK2",
+          "HE"
+        ],
+        "title": "TermKind"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          },
+          "input": {
+            "title": "Input"
+          },
+          "ctx": {
+            "type": "object",
+            "title": "Context"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      },
+      "ValidationReport": {
+        "properties": {
+          "dataset": {
+            "type": "string",
+            "title": "Dataset"
+          },
+          "issues": {
+            "items": {
+              "$ref": "#/components/schemas/Issue"
+            },
+            "type": "array",
+            "title": "Issues"
+          }
+        },
+        "type": "object",
+        "required": [
+          "dataset"
+        ],
+        "title": "ValidationReport"
+      },
+      "WhatIfRequest": {
+        "properties": {
+          "dataset": {
+            "type": "string",
+            "title": "Dataset",
+            "default": "hcmus_cntt_k2020"
+          },
+          "regulation": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Regulation"
+          },
+          "student_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Student Id",
+            "description": "Mã SV mẫu trong dataset"
+          },
+          "student": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/StudentProfile"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Hồ sơ SV gửi trực tiếp (ưu tiên hơn student_id)"
+          },
+          "preferences": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Preferences"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "plan": {
+            "$ref": "#/components/schemas/Plan"
+          },
+          "course_id": {
+            "type": "string",
+            "title": "Course Id"
+          }
+        },
+        "type": "object",
+        "required": [
+          "plan",
+          "course_id"
+        ],
+        "title": "WhatIfRequest"
+      },
+      "WhatIfResult": {
+        "properties": {
+          "course_id": {
+            "type": "string",
+            "title": "Course Id"
+          },
+          "course_name": {
+            "type": "string",
+            "title": "Course Name"
+          },
+          "failed_term": {
+            "type": "string",
+            "title": "Failed Term"
+          },
+          "original_graduation": {
+            "type": "string",
+            "title": "Original Graduation"
+          },
+          "status": {
+            "type": "string",
+            "title": "Status"
+          },
+          "new_graduation": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "New Graduation"
+          },
+          "delay_main_terms": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Delay Main Terms"
+          },
+          "message": {
+            "type": "string",
+            "title": "Message"
+          },
+          "result": {
+            "$ref": "#/components/schemas/PlanResult"
+          }
+        },
+        "type": "object",
+        "required": [
+          "course_id",
+          "course_name",
+          "failed_term",
+          "original_graduation",
+          "status",
+          "message",
+          "result"
+        ],
+        "title": "WhatIfResult"
+      }
+    }
+  }
+}
