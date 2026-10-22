@@ -22,8 +22,10 @@ def course_badges(ctx: PlanningContext, c: str) -> list[str]:
     if c in ctx.mandatory and es is not None and ls is not None and ls - es <= 1:
         badges.append("găng")
     off = ctx.ds.offerings.get(c)
-    if off is not None and (off.year_parity or off.offers_per_year <= 1):
-        badges.append("hiếm mở")
+    if off is not None and off.year_parity:
+        badges.append("mở 2 năm/lần")
+    elif off is not None and off.offers_per_year <= 1:
+        badges.append("mở 1 lần/năm")
     if ctx.risk.get(c, 0) >= 10:
         badges.append("rủi ro")
     if c in ctx.state.failed:
