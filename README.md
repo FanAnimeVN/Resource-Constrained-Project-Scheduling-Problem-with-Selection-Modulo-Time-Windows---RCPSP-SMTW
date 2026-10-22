@@ -55,6 +55,21 @@ Tài liệu API (Swagger) có tại http://localhost:8000/docs.
 Docker: `docker compose up --build` dựng một image phục vụ cả API lẫn giao diện tại cổng 8000. Dockerfile
 **chưa được build thử** trong môi trường phát triển hiện tại vì không có Docker daemon.
 
+## Deploy công khai lên Vercel
+
+Repo đã có sẵn `vercel.json`, `api/index.py` và `requirements.txt`:
+- giao diện build từ `frontend/` và được phục vụ dạng tĩnh;
+- mọi đường dẫn `/api/*` chạy FastAPI + OR-Tools trong một hàm Python serverless (tối đa 60 giây, 2 GB RAM).
+
+Các bước:
+1. Vào https://vercel.com/new, chọn **Import** repo GitHub này. Không cần đổi cấu hình: Vercel tự đọc `vercel.json`.
+2. Bấm **Deploy**. Bản build từ nhánh `main` là bản *Production* với đường dẫn công khai `*.vercel.app`.
+3. Bản build từ nhánh khác là *Preview*. Mặc định Vercel bật *Deployment Protection* cho Preview, nên người ngoài
+   phải đăng nhập mới xem được. Muốn chia sẻ công khai, hãy merge vào `main`, hoặc tắt mục này trong
+   Settings → Deployment Protection.
+
+Hoặc dùng CLI: `npm i -g vercel && vercel --prod`.
+
 ## Kiến trúc
 
 ```
