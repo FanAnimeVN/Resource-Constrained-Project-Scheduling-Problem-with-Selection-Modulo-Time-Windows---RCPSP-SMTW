@@ -1,6 +1,6 @@
 # Kế hoạch MVP: Hệ thống lập lộ trình học tập cá nhân hóa (RCPSP-SMTW), Khoa CNTT, ĐH KHTN ĐHQG-HCM
 
-> **Trạng thái: đã duyệt, đang thực thi theo các mốc ở mục 11.**
+> **Trạng thái: đã thực thi đủ các mốc M0–M10.** Cách chạy và kết quả: xem `README.md`; các điểm khác so với kế hoạch: xem `docs/model.md` (mục 4).
 > Nhánh làm việc: `claude/quirky-davinci-q3kngj`. Xong mỗi mốc thì commit rồi push. Chưa tạo PR khi bạn chưa yêu cầu.
 
 ---
