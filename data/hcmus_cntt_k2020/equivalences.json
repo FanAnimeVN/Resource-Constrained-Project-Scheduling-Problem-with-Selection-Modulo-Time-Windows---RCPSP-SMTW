@@ -1,0 +1,30 @@
+[
+  {
+    "canonical": "CSC10001",
+    "equivalents": [
+      "CTT001"
+    ],
+    "kind": "EQUIVALENT"
+  },
+  {
+    "canonical": "CSC10002",
+    "equivalents": [
+      "CTT002"
+    ],
+    "kind": "EQUIVALENT"
+  },
+  {
+    "canonical": "MTH00003",
+    "equivalents": [
+      "TTH001"
+    ],
+    "kind": "EQUIVALENT"
+  },
+  {
+    "canonical": "CSC10003",
+    "equivalents": [
+      "CTT105"
+    ],
+    "kind": "SUBSTITUTE"
+  }
+]

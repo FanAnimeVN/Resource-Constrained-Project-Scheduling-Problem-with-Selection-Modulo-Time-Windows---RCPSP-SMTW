@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.hypothesis/
+.mypy_cache/
+build/
+dist/
+
+# Node
+node_modules/
+frontend/dist/
+frontend/test-results/
+frontend/playwright-report/
+
+# Editors / OS
+.DS_Store
+.idea/
+.vscode/

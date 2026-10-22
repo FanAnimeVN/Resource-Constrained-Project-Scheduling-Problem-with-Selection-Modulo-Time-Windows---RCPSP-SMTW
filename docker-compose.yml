@@ -1,0 +1,11 @@
+services:
+  planner:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      CPLAN_WORKERS: "4"
+      CPLAN_STAGE_TIME_LIMIT: "3"
+    volumes:
+      # sửa dữ liệu CTĐT/quy chế mà không cần build lại image
+      - ./data:/app/data:ro

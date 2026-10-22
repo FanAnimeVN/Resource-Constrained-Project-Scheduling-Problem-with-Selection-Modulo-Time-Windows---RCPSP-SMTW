@@ -1,0 +1,342 @@
+{
+  "id": "sv04",
+  "name": "Phạm Quốc Dũng (K2021, sắp hết hạn)",
+  "cohort_year": 2021,
+  "curriculum_id": "CNTT_K2020",
+  "next_term": {
+    "year": 2026,
+    "kind": "HK1"
+  },
+  "records": [
+    {
+      "course": "BAA00101",
+      "status": "PASSED",
+      "term": {
+        "year": 2021,
+        "kind": "HK1"
+      },
+      "grade": 6.5
+    },
+    {
+      "course": "MTH00003",
+      "status": "PASSED",
+      "term": {
+        "year": 2021,
+        "kind": "HK1"
+      },
+      "grade": 7.0
+    },
+    {
+      "course": "MTH00030",
+      "status": "PASSED",
+      "term": {
+        "year": 2021,
+        "kind": "HK1"
+      },
+      "grade": 7.5
+    },
+    {
+      "course": "PHY00001",
+      "status": "PASSED",
+      "term": {
+        "year": 2021,
+        "kind": "HK1"
+      },
+      "grade": 8.0
+    },
+    {
+      "course": "CSC10001",
+      "status": "PASSED",
+      "term": {
+        "year": 2021,
+        "kind": "HK2"
+      },
+      "grade": 6.5
+    },
+    {
+      "course": "CSC00004",
+      "status": "PASSED",
+      "term": {
+        "year": 2021,
+        "kind": "HK2"
+      },
+      "grade": 7.0
+    },
+    {
+      "course": "BAA00102",
+      "status": "PASSED",
+      "term": {
+        "year": 2021,
+        "kind": "HK2"
+      },
+      "grade": 7.5
+    },
+    {
+      "course": "MTH00004",
+      "status": "PASSED",
+      "term": {
+        "year": 2021,
+        "kind": "HK2"
+      },
+      "grade": 8.0
+    },
+    {
+      "course": "MTH00041",
+      "status": "PASSED",
+      "term": {
+        "year": 2022,
+        "kind": "HK1"
+      },
+      "grade": 6.5
+    },
+    {
+      "course": "PHY00002",
+      "status": "PASSED",
+      "term": {
+        "year": 2022,
+        "kind": "HK1"
+      },
+      "grade": 7.0
+    },
+    {
+      "course": "PHY00081",
+      "status": "PASSED",
+      "term": {
+        "year": 2022,
+        "kind": "HK1"
+      },
+      "grade": 7.5
+    },
+    {
+      "course": "BAA00004",
+      "status": "PASSED",
+      "term": {
+        "year": 2022,
+        "kind": "HK1"
+      },
+      "grade": 8.0
+    },
+    {
+      "course": "BAA00103",
+      "status": "PASSED",
+      "term": {
+        "year": 2022,
+        "kind": "HK2"
+      },
+      "grade": 6.5
+    },
+    {
+      "course": "MTH00040",
+      "status": "PASSED",
+      "term": {
+        "year": 2022,
+        "kind": "HK2"
+      },
+      "grade": 7.0
+    },
+    {
+      "course": "MTH00050",
+      "status": "PASSED",
+      "term": {
+        "year": 2022,
+        "kind": "HK2"
+      },
+      "grade": 7.5
+    },
+    {
+      "course": "CSC10003",
+      "status": "PASSED",
+      "term": {
+        "year": 2022,
+        "kind": "HK2"
+      },
+      "grade": 8.0
+    },
+    {
+      "course": "CSC10009",
+      "status": "PASSED",
+      "term": {
+        "year": 2023,
+        "kind": "HK1"
+      },
+      "grade": 6.5
+    },
+    {
+      "course": "CHE00001",
+      "status": "PASSED",
+      "term": {
+        "year": 2023,
+        "kind": "HK1"
+      },
+      "grade": 7.0
+    },
+    {
+      "course": "CHE00081",
+      "status": "PASSED",
+      "term": {
+        "year": 2023,
+        "kind": "HK1"
+      },
+      "grade": 7.5
+    },
+    {
+      "course": "BAA00104",
+      "status": "PASSED",
+      "term": {
+        "year": 2023,
+        "kind": "HK1"
+      },
+      "grade": 8.0
+    },
+    {
+      "course": "CSC10006",
+      "status": "PASSED",
+      "term": {
+        "year": 2023,
+        "kind": "HK2"
+      },
+      "grade": 6.5
+    },
+    {
+      "course": "CSC10007",
+      "status": "PASSED",
+      "term": {
+        "year": 2023,
+        "kind": "HK2"
+      },
+      "grade": 7.0
+    },
+    {
+      "course": "CSC13002",
+      "status": "PASSED",
+      "term": {
+        "year": 2023,
+        "kind": "HK2"
+      },
+      "grade": 7.5
+    },
+    {
+      "course": "BAA00003",
+      "status": "PASSED",
+      "term": {
+        "year": 2023,
+        "kind": "HK2"
+      },
+      "grade": 8.0
+    },
+    {
+      "course": "CSC10008",
+      "status": "PASSED",
+      "term": {
+        "year": 2024,
+        "kind": "HK1"
+      },
+      "grade": 6.5
+    },
+    {
+      "course": "BIO00001",
+      "status": "PASSED",
+      "term": {
+        "year": 2024,
+        "kind": "HK1"
+      },
+      "grade": 7.0
+    },
+    {
+      "course": "BIO00081",
+      "status": "PASSED",
+      "term": {
+        "year": 2024,
+        "kind": "HK1"
+      },
+      "grade": 7.5
+    },
+    {
+      "course": "BAA00005",
+      "status": "PASSED",
+      "term": {
+        "year": 2024,
+        "kind": "HK1"
+      },
+      "grade": 8.0
+    },
+    {
+      "course": "ENV00001",
+      "status": "PASSED",
+      "term": {
+        "year": 2024,
+        "kind": "HK2"
+      },
+      "grade": 6.5
+    },
+    {
+      "course": "CSC14008",
+      "status": "PASSED",
+      "term": {
+        "year": 2024,
+        "kind": "HK2"
+      },
+      "grade": 7.0
+    },
+    {
+      "course": "CSC14123",
+      "status": "PASSED",
+      "term": {
+        "year": 2024,
+        "kind": "HK2"
+      },
+      "grade": 7.5
+    },
+    {
+      "course": "CSC14124",
+      "status": "PASSED",
+      "term": {
+        "year": 2024,
+        "kind": "HK2"
+      },
+      "grade": 8.0
+    },
+    {
+      "course": "CSC13008",
+      "status": "PASSED",
+      "term": {
+        "year": 2025,
+        "kind": "HK1"
+      },
+      "grade": 6.5
+    },
+    {
+      "course": "CSC13014",
+      "status": "PASSED",
+      "term": {
+        "year": 2025,
+        "kind": "HK1"
+      },
+      "grade": 7.0
+    },
+    {
+      "course": "CSC00010",
+      "status": "PASSED",
+      "term": {
+        "year": 2025,
+        "kind": "HK1"
+      },
+      "grade": 7.5
+    },
+    {
+      "course": "CSC13012",
+      "status": "PASSED",
+      "term": {
+        "year": 2025,
+        "kind": "HK1"
+      },
+      "grade": 8.0
+    }
+  ],
+  "declared_specialization": "KHMT",
+  "interests": {
+    "theory": 3,
+    "ai_ml": 3
+  },
+  "note": "Còn 2 học kỳ trước hạn tối đa nhưng chưa học Kỹ thuật lập trình → chuỗi 4 môn bắt buộc không kịp."
+}

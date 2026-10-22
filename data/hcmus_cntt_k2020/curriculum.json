@@ -1,0 +1,782 @@
+{
+  "id": "CNTT_K2020",
+  "name": "Cử nhân Công nghệ thông tin (chương trình chuẩn, từ khóa 2020) – dữ liệu mẫu",
+  "total_credits_required": 138,
+  "credit_rule": "at_least",
+  "standard_main_terms": 8,
+  "blocks": [
+    {
+      "id": "DC",
+      "name": "Giáo dục đại cương",
+      "rule": "MIN_CREDITS",
+      "required_credits": 56,
+      "kind": "general",
+      "children": [
+        {
+          "id": "DC_LLCT",
+          "name": "Lý luận chính trị",
+          "rule": "ALL_MANDATORY",
+          "required_credits": 11,
+          "courses": [
+            {
+              "id": "BAA00101",
+              "mandatory": false
+            },
+            {
+              "id": "BAA00102",
+              "mandatory": false
+            },
+            {
+              "id": "BAA00103",
+              "mandatory": false
+            },
+            {
+              "id": "BAA00104",
+              "mandatory": false
+            },
+            {
+              "id": "BAA00003",
+              "mandatory": false
+            }
+          ]
+        },
+        {
+          "id": "DC_XH",
+          "name": "Khoa học xã hội – Kinh tế – Kỹ năng",
+          "rule": "MIN_CREDITS",
+          "required_credits": 5,
+          "courses": [
+            {
+              "id": "BAA00004",
+              "mandatory": true
+            },
+            {
+              "id": "BAA00005",
+              "mandatory": false
+            },
+            {
+              "id": "BAA00006",
+              "mandatory": false
+            },
+            {
+              "id": "BAA00007",
+              "mandatory": false
+            },
+            {
+              "id": "BAA00008",
+              "mandatory": false
+            }
+          ]
+        },
+        {
+          "id": "DC_TOAN",
+          "name": "Toán – Khoa học tự nhiên – Công nghệ – Môi trường",
+          "rule": "MIN_CREDITS",
+          "required_credits": 36,
+          "courses": [
+            {
+              "id": "MTH00003",
+              "mandatory": true
+            },
+            {
+              "id": "MTH00004",
+              "mandatory": true
+            },
+            {
+              "id": "MTH00030",
+              "mandatory": true
+            },
+            {
+              "id": "MTH00040",
+              "mandatory": true
+            },
+            {
+              "id": "MTH00041",
+              "mandatory": true
+            },
+            {
+              "id": "MTH00050",
+              "mandatory": true
+            },
+            {
+              "id": "PHY00001",
+              "mandatory": true
+            },
+            {
+              "id": "PHY00002",
+              "mandatory": true
+            },
+            {
+              "id": "PHY00081",
+              "mandatory": true
+            },
+            {
+              "id": "CHE00001",
+              "mandatory": false
+            },
+            {
+              "id": "CHE00081",
+              "mandatory": false
+            },
+            {
+              "id": "BIO00001",
+              "mandatory": false
+            },
+            {
+              "id": "BIO00081",
+              "mandatory": false
+            },
+            {
+              "id": "ENV00001",
+              "mandatory": false
+            },
+            {
+              "id": "MTH00057",
+              "mandatory": false
+            },
+            {
+              "id": "MTH00060",
+              "mandatory": false
+            },
+            {
+              "id": "MTH00061",
+              "mandatory": false
+            }
+          ]
+        },
+        {
+          "id": "DC_TIN",
+          "name": "Tin học",
+          "rule": "ALL_MANDATORY",
+          "required_credits": 4,
+          "courses": [
+            {
+              "id": "CSC00004",
+              "mandatory": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CSN",
+      "name": "Kiến thức cơ sở ngành",
+      "rule": "ALL_MANDATORY",
+      "required_credits": 38,
+      "kind": "foundation",
+      "courses": [
+        {
+          "id": "CSC10001",
+          "mandatory": false
+        },
+        {
+          "id": "CSC10002",
+          "mandatory": false
+        },
+        {
+          "id": "CSC10003",
+          "mandatory": false
+        },
+        {
+          "id": "CSC10004",
+          "mandatory": false
+        },
+        {
+          "id": "CSC10006",
+          "mandatory": false
+        },
+        {
+          "id": "CSC10007",
+          "mandatory": false
+        },
+        {
+          "id": "CSC10008",
+          "mandatory": false
+        },
+        {
+          "id": "CSC10009",
+          "mandatory": false
+        },
+        {
+          "id": "CSC13002",
+          "mandatory": false
+        },
+        {
+          "id": "CSC14003",
+          "mandatory": false
+        }
+      ]
+    },
+    {
+      "id": "CN",
+      "name": "Kiến thức chuyên ngành",
+      "rule": "MIN_CREDITS",
+      "required_credits": 24,
+      "specialization_group": true,
+      "kind": "major",
+      "children": [
+        {
+          "id": "CN_KHMT",
+          "name": "Chuyên ngành Khoa học máy tính",
+          "rule": "MIN_CREDITS",
+          "required_credits": 24,
+          "specialization": "KHMT",
+          "kind": "major",
+          "courses": [
+            {
+              "id": "CSC14005",
+              "mandatory": true
+            },
+            {
+              "id": "CSC14007",
+              "mandatory": true
+            },
+            {
+              "id": "CSC14008",
+              "mandatory": true
+            },
+            {
+              "id": "CSC14120",
+              "mandatory": false
+            },
+            {
+              "id": "CSC14122",
+              "mandatory": false
+            },
+            {
+              "id": "CSC14123",
+              "mandatory": false
+            },
+            {
+              "id": "CSC14124",
+              "mandatory": false
+            },
+            {
+              "id": "CSC14125",
+              "mandatory": false
+            },
+            {
+              "id": "CSC14126",
+              "mandatory": false
+            }
+          ]
+        },
+        {
+          "id": "CN_CNTT",
+          "name": "Chuyên ngành Công nghệ tri thức",
+          "rule": "MIN_CREDITS",
+          "required_credits": 24,
+          "specialization": "CNTT",
+          "kind": "major",
+          "courses": [
+            {
+              "id": "CSC14201",
+              "mandatory": true
+            },
+            {
+              "id": "CSC14202",
+              "mandatory": true
+            },
+            {
+              "id": "CSC14203",
+              "mandatory": true
+            },
+            {
+              "id": "CSC14005",
+              "mandatory": false
+            },
+            {
+              "id": "CSC14120",
+              "mandatory": false
+            },
+            {
+              "id": "CSC14122",
+              "mandatory": false
+            },
+            {
+              "id": "CSC14204",
+              "mandatory": false
+            },
+            {
+              "id": "CSC14205",
+              "mandatory": false
+            },
+            {
+              "id": "CSC14206",
+              "mandatory": false
+            }
+          ]
+        },
+        {
+          "id": "CN_CNPM",
+          "name": "Chuyên ngành Công nghệ phần mềm",
+          "rule": "MIN_CREDITS",
+          "required_credits": 24,
+          "specialization": "CNPM",
+          "kind": "major",
+          "courses": [
+            {
+              "id": "CSC13003",
+              "mandatory": true
+            },
+            {
+              "id": "CSC13004",
+              "mandatory": true
+            },
+            {
+              "id": "CSC13005",
+              "mandatory": true
+            },
+            {
+              "id": "CSC13008",
+              "mandatory": false
+            },
+            {
+              "id": "CSC13009",
+              "mandatory": false
+            },
+            {
+              "id": "CSC13010",
+              "mandatory": false
+            },
+            {
+              "id": "CSC13011",
+              "mandatory": false
+            },
+            {
+              "id": "CSC13012",
+              "mandatory": false
+            },
+            {
+              "id": "CSC13013",
+              "mandatory": false
+            }
+          ]
+        },
+        {
+          "id": "CN_HTTT",
+          "name": "Chuyên ngành Hệ thống thông tin",
+          "rule": "MIN_CREDITS",
+          "required_credits": 24,
+          "specialization": "HTTT",
+          "kind": "major",
+          "courses": [
+            {
+              "id": "CSC12001",
+              "mandatory": true
+            },
+            {
+              "id": "CSC12002",
+              "mandatory": true
+            },
+            {
+              "id": "CSC12003",
+              "mandatory": true
+            },
+            {
+              "id": "CSC12004",
+              "mandatory": false
+            },
+            {
+              "id": "CSC12005",
+              "mandatory": false
+            },
+            {
+              "id": "CSC12006",
+              "mandatory": false
+            },
+            {
+              "id": "CSC12007",
+              "mandatory": false
+            },
+            {
+              "id": "CSC13008",
+              "mandatory": false
+            },
+            {
+              "id": "CSC14123",
+              "mandatory": false
+            }
+          ]
+        },
+        {
+          "id": "CN_MMT",
+          "name": "Chuyên ngành Mạng máy tính và Viễn thông",
+          "rule": "MIN_CREDITS",
+          "required_credits": 24,
+          "specialization": "MMT",
+          "kind": "major",
+          "courses": [
+            {
+              "id": "CSC11001",
+              "mandatory": true
+            },
+            {
+              "id": "CSC11002",
+              "mandatory": true
+            },
+            {
+              "id": "CSC11003",
+              "mandatory": true
+            },
+            {
+              "id": "CSC11004",
+              "mandatory": false
+            },
+            {
+              "id": "CSC11005",
+              "mandatory": false
+            },
+            {
+              "id": "CSC11006",
+              "mandatory": false
+            },
+            {
+              "id": "CSC11007",
+              "mandatory": false
+            },
+            {
+              "id": "CSC11008",
+              "mandatory": false
+            },
+            {
+              "id": "CSC13011",
+              "mandatory": false
+            }
+          ]
+        },
+        {
+          "id": "CN_TGMT",
+          "name": "Chuyên ngành Thị giác máy tính và Khoa học Robot",
+          "rule": "MIN_CREDITS",
+          "required_credits": 24,
+          "specialization": "TGMT",
+          "kind": "major",
+          "courses": [
+            {
+              "id": "CSC16001",
+              "mandatory": true
+            },
+            {
+              "id": "CSC16002",
+              "mandatory": true
+            },
+            {
+              "id": "CSC16003",
+              "mandatory": true
+            },
+            {
+              "id": "CSC16004",
+              "mandatory": false
+            },
+            {
+              "id": "CSC16005",
+              "mandatory": false
+            },
+            {
+              "id": "CSC16006",
+              "mandatory": false
+            },
+            {
+              "id": "CSC16007",
+              "mandatory": false
+            },
+            {
+              "id": "CSC14005",
+              "mandatory": false
+            },
+            {
+              "id": "CSC14120",
+              "mandatory": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "TCTD",
+      "name": "Tự chọn tự do",
+      "rule": "MIN_CREDITS",
+      "required_credits": 10,
+      "kind": "free",
+      "courses": [
+        {
+          "id": "CSC11001",
+          "mandatory": false
+        },
+        {
+          "id": "CSC11002",
+          "mandatory": false
+        },
+        {
+          "id": "CSC11003",
+          "mandatory": false
+        },
+        {
+          "id": "CSC11004",
+          "mandatory": false
+        },
+        {
+          "id": "CSC11005",
+          "mandatory": false
+        },
+        {
+          "id": "CSC11006",
+          "mandatory": false
+        },
+        {
+          "id": "CSC11007",
+          "mandatory": false
+        },
+        {
+          "id": "CSC11008",
+          "mandatory": false
+        },
+        {
+          "id": "CSC12001",
+          "mandatory": false
+        },
+        {
+          "id": "CSC12002",
+          "mandatory": false
+        },
+        {
+          "id": "CSC12003",
+          "mandatory": false
+        },
+        {
+          "id": "CSC12004",
+          "mandatory": false
+        },
+        {
+          "id": "CSC12005",
+          "mandatory": false
+        },
+        {
+          "id": "CSC12006",
+          "mandatory": false
+        },
+        {
+          "id": "CSC12007",
+          "mandatory": false
+        },
+        {
+          "id": "CSC13003",
+          "mandatory": false
+        },
+        {
+          "id": "CSC13004",
+          "mandatory": false
+        },
+        {
+          "id": "CSC13005",
+          "mandatory": false
+        },
+        {
+          "id": "CSC13008",
+          "mandatory": false
+        },
+        {
+          "id": "CSC13009",
+          "mandatory": false
+        },
+        {
+          "id": "CSC13010",
+          "mandatory": false
+        },
+        {
+          "id": "CSC13011",
+          "mandatory": false
+        },
+        {
+          "id": "CSC13012",
+          "mandatory": false
+        },
+        {
+          "id": "CSC13013",
+          "mandatory": false
+        },
+        {
+          "id": "CSC14005",
+          "mandatory": false
+        },
+        {
+          "id": "CSC14007",
+          "mandatory": false
+        },
+        {
+          "id": "CSC14008",
+          "mandatory": false
+        },
+        {
+          "id": "CSC14120",
+          "mandatory": false
+        },
+        {
+          "id": "CSC14122",
+          "mandatory": false
+        },
+        {
+          "id": "CSC14123",
+          "mandatory": false
+        },
+        {
+          "id": "CSC14124",
+          "mandatory": false
+        },
+        {
+          "id": "CSC14125",
+          "mandatory": false
+        },
+        {
+          "id": "CSC14126",
+          "mandatory": false
+        },
+        {
+          "id": "CSC14201",
+          "mandatory": false
+        },
+        {
+          "id": "CSC14202",
+          "mandatory": false
+        },
+        {
+          "id": "CSC14203",
+          "mandatory": false
+        },
+        {
+          "id": "CSC14204",
+          "mandatory": false
+        },
+        {
+          "id": "CSC14205",
+          "mandatory": false
+        },
+        {
+          "id": "CSC14206",
+          "mandatory": false
+        },
+        {
+          "id": "CSC16001",
+          "mandatory": false
+        },
+        {
+          "id": "CSC16002",
+          "mandatory": false
+        },
+        {
+          "id": "CSC16003",
+          "mandatory": false
+        },
+        {
+          "id": "CSC16004",
+          "mandatory": false
+        },
+        {
+          "id": "CSC16005",
+          "mandatory": false
+        },
+        {
+          "id": "CSC16006",
+          "mandatory": false
+        },
+        {
+          "id": "CSC16007",
+          "mandatory": false
+        },
+        {
+          "id": "CSC00010",
+          "mandatory": false
+        },
+        {
+          "id": "CSC00011",
+          "mandatory": false
+        },
+        {
+          "id": "CSC13014",
+          "mandatory": false
+        },
+        {
+          "id": "BAA00011",
+          "mandatory": false
+        },
+        {
+          "id": "MTH00057",
+          "mandatory": false
+        },
+        {
+          "id": "MTH00060",
+          "mandatory": false
+        },
+        {
+          "id": "MTH00061",
+          "mandatory": false
+        }
+      ]
+    },
+    {
+      "id": "TN",
+      "name": "Tốt nghiệp",
+      "rule": "MIN_CREDITS",
+      "required_credits": 10,
+      "kind": "graduation",
+      "courses": [
+        {
+          "id": "CSC10251",
+          "mandatory": false
+        },
+        {
+          "id": "CSC10252",
+          "mandatory": false
+        },
+        {
+          "id": "CSC10253",
+          "mandatory": false
+        }
+      ]
+    }
+  ],
+  "specializations": [
+    {
+      "id": "KHMT",
+      "name": "Khoa học máy tính",
+      "block_id": "CN_KHMT",
+      "description": "Thuật toán, học máy, tính toán hiệu năng cao."
+    },
+    {
+      "id": "CNTT",
+      "name": "Công nghệ tri thức",
+      "block_id": "CN_CNTT",
+      "description": "Biểu diễn tri thức, khai thác dữ liệu, hệ thông minh."
+    },
+    {
+      "id": "CNPM",
+      "name": "Công nghệ phần mềm",
+      "block_id": "CN_CNPM",
+      "description": "Quy trình phát triển, kiến trúc, kiểm thử, quản lý dự án phần mềm."
+    },
+    {
+      "id": "HTTT",
+      "name": "Hệ thống thông tin",
+      "block_id": "CN_HTTT",
+      "description": "Cơ sở dữ liệu, hệ thống doanh nghiệp, phân tích nghiệp vụ."
+    },
+    {
+      "id": "MMT",
+      "name": "Mạng máy tính và Viễn thông",
+      "block_id": "CN_MMT",
+      "description": "Mạng, hạ tầng, an ninh mạng, điện toán đám mây."
+    },
+    {
+      "id": "TGMT",
+      "name": "Thị giác máy tính và Khoa học Robot",
+      "block_id": "CN_TGMT",
+      "description": "Xử lý ảnh, thị giác máy tính, robot."
+    }
+  ],
+  "graduation_conditions": [
+    "Hoàn thành Giáo dục thể chất (không tính vào 138 TC)",
+    "Có chứng chỉ Giáo dục quốc phòng – an ninh",
+    "Đạt chuẩn ngoại ngữ đầu ra theo quy định của Trường"
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "id": "sv05",
+  "name": "Võ Thanh Em (chuyển từ CTĐT cũ)",
+  "cohort_year": 2023,
+  "curriculum_id": "CNTT_K2020",
+  "next_term": {
+    "year": 2026,
+    "kind": "HK2"
+  },
+  "records": [
+    {
+      "course": "CTT001",
+      "status": "PASSED",
+      "term": {
+        "year": 2023,
+        "kind": "HK1"
+      },
+      "grade": 8.0
+    },
+    {
+      "course": "TTH001",
+      "status": "PASSED",
+      "term": {
+        "year": 2023,
+        "kind": "HK1"
+      },
+      "grade": 7.0
+    },
+    {
+      "course": "CTT002",
+      "status": "PASSED",
+      "term": {
+        "year": 2023,
+        "kind": "HK2"
+      },
+      "grade": 7.5
+    },
+    {
+      "course": "CTT105",
+      "status": "PASSED",
+      "term": {
+        "year": 2024,
+        "kind": "HK1"
+      },
+      "grade": 8.5
+    },
+    {
+      "course": "BAA00101",
+      "status": "PASSED",
+      "term": {
+        "year": 2024,
+        "kind": "HK2"
+      },
+      "grade": 6.6
+    },
+    {
+      "course": "MTH00030",
+      "status": "PASSED",
+      "term": {
+        "year": 2024,
+        "kind": "HK2"
+      },
+      "grade": 7.4
+    },
+    {
+      "course": "PHY00001",
+      "status": "PASSED",
+      "term": {
+        "year": 2024,
+        "kind": "HK2"
+      },
+      "grade": 8.2
+    },
+    {
+      "course": "CSC00004",
+      "status": "PASSED",
+      "term": {
+        "year": 2024,
+        "kind": "HK2"
+      },
+      "grade": 7.0
+    },
+    {
+      "course": "BAA00102",
+      "status": "PASSED",
+      "term": {
+        "year": 2024,
+        "kind": "HK2"
+      },
+      "grade": 7.8
+    },
+    {
+      "course": "MTH00004",
+      "status": "PASSED",
+      "term": {
+        "year": 2024,
+        "kind": "HK2"
+      },
+      "grade": 6.6
+    },
+    {
+      "course": "MTH00041",
+      "status": "PASSED",
+      "term": {
+        "year": 2024,
+        "kind": "HK2"
+      },
+      "grade": 7.4
+    },
+    {
+      "course": "PHY00002",
+      "status": "PASSED",
+      "term": {
+        "year": 2024,
+        "kind": "HK2"
+      },
+      "grade": 8.2
+    },
+    {
+      "course": "PHY00081",
+      "status": "PASSED",
+      "term": {
+        "year": 2024,
+        "kind": "HK2"
+      },
+      "grade": 7.0
+    },
+    {
+      "course": "BAA00004",
+      "status": "PASSED",
+      "term": {
+        "year": 2024,
+        "kind": "HK2"
+      },
+      "grade": 7.8
+    },
+    {
+      "course": "BAA00103",
+      "status": "PASSED",
+      "term": {
+        "year": 2024,
+        "kind": "HK2"
+      },
+      "grade": 6.6
+    },
+    {
+      "course": "MTH00040",
+      "status": "PASSED",
+      "term": {
+        "year": 2024,
+        "kind": "HK2"
+      },
+      "grade": 7.4
+    },
+    {
+      "course": "MTH00050",
+      "status": "PASSED",
+      "term": {
+        "year": 2024,
+        "kind": "HK2"
+      },
+      "grade": 8.2
+    },
+    {
+      "course": "CSC10009",
+      "status": "PASSED",
+      "term": {
+        "year": 2024,
+        "kind": "HK2"
+      },
+      "grade": 7.0
+    }
+  ],
+  "interests": {
+    "networks": 5,
+    "security": 4,
+    "systems": 3
+  },
+  "career_goals": [
+    "network_engineer",
+    "security_analyst"
+  ],
+  "note": "Có các mã môn cũ CTT001, CTT002, TTH001, CTT105 được quy đổi tương đương."
+}

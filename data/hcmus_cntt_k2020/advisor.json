@@ -1,0 +1,215 @@
+{
+  "topics": {
+    "ai_ml": "Trí tuệ nhân tạo & học máy",
+    "data": "Dữ liệu & phân tích",
+    "theory": "Thuật toán & lý thuyết",
+    "software": "Kỹ nghệ phần mềm",
+    "web_mobile": "Web & di động",
+    "networks": "Mạng & hạ tầng",
+    "security": "An toàn thông tin",
+    "systems": "Hệ thống & điện toán đám mây",
+    "info_systems": "Hệ thống thông tin doanh nghiệp",
+    "vision_robotics": "Thị giác máy tính & robot"
+  },
+  "careers": {
+    "ai_engineer": {
+      "name": "Kỹ sư AI / ML",
+      "topics": [
+        "ai_ml",
+        "data"
+      ]
+    },
+    "data_scientist": {
+      "name": "Nhà khoa học dữ liệu",
+      "topics": [
+        "data",
+        "ai_ml"
+      ]
+    },
+    "researcher": {
+      "name": "Nghiên cứu viên / học sau đại học",
+      "topics": [
+        "theory",
+        "ai_ml"
+      ]
+    },
+    "backend_dev": {
+      "name": "Lập trình viên backend",
+      "topics": [
+        "software",
+        "web_mobile"
+      ]
+    },
+    "frontend_mobile_dev": {
+      "name": "Lập trình viên frontend / mobile",
+      "topics": [
+        "web_mobile"
+      ]
+    },
+    "qa_engineer": {
+      "name": "Kỹ sư kiểm thử (QA)",
+      "topics": [
+        "software"
+      ]
+    },
+    "devops_cloud": {
+      "name": "Kỹ sư DevOps / Cloud",
+      "topics": [
+        "systems",
+        "networks"
+      ]
+    },
+    "network_engineer": {
+      "name": "Kỹ sư mạng",
+      "topics": [
+        "networks"
+      ]
+    },
+    "security_analyst": {
+      "name": "Chuyên viên an toàn thông tin",
+      "topics": [
+        "security",
+        "networks"
+      ]
+    },
+    "business_analyst": {
+      "name": "Chuyên viên phân tích nghiệp vụ / ERP",
+      "topics": [
+        "info_systems",
+        "data"
+      ]
+    },
+    "cv_engineer": {
+      "name": "Kỹ sư thị giác máy tính / robot",
+      "topics": [
+        "vision_robotics",
+        "ai_ml"
+      ]
+    }
+  },
+  "specializations": {
+    "KHMT": {
+      "topic_profile": {
+        "theory": 1.0,
+        "ai_ml": 0.7,
+        "data": 0.3,
+        "systems": 0.3,
+        "security": 0.2
+      },
+      "indicator_courses": {
+        "CSC10004": 1.0,
+        "MTH00041": 0.9,
+        "MTH00050": 0.7,
+        "CSC14003": 0.8,
+        "MTH00030": 0.5,
+        "CSC10002": 0.6
+      },
+      "careers": [
+        "researcher",
+        "ai_engineer",
+        "backend_dev"
+      ]
+    },
+    "CNTT": {
+      "topic_profile": {
+        "ai_ml": 0.9,
+        "data": 1.0,
+        "info_systems": 0.3,
+        "theory": 0.3
+      },
+      "indicator_courses": {
+        "CSC14003": 1.0,
+        "MTH00040": 0.9,
+        "CSC10006": 0.8,
+        "MTH00030": 0.6
+      },
+      "careers": [
+        "data_scientist",
+        "ai_engineer",
+        "business_analyst"
+      ]
+    },
+    "CNPM": {
+      "topic_profile": {
+        "software": 1.0,
+        "web_mobile": 0.7,
+        "systems": 0.2,
+        "info_systems": 0.2
+      },
+      "indicator_courses": {
+        "CSC10003": 1.0,
+        "CSC13002": 1.0,
+        "CSC10002": 0.7,
+        "CSC10006": 0.5
+      },
+      "careers": [
+        "backend_dev",
+        "frontend_mobile_dev",
+        "qa_engineer",
+        "devops_cloud"
+      ]
+    },
+    "HTTT": {
+      "topic_profile": {
+        "info_systems": 1.0,
+        "data": 0.8,
+        "web_mobile": 0.3,
+        "security": 0.2
+      },
+      "indicator_courses": {
+        "CSC10006": 1.0,
+        "MTH00040": 0.5,
+        "BAA00005": 0.4,
+        "CSC13002": 0.5
+      },
+      "careers": [
+        "business_analyst",
+        "data_scientist",
+        "backend_dev"
+      ]
+    },
+    "MMT": {
+      "topic_profile": {
+        "networks": 1.0,
+        "systems": 0.8,
+        "security": 0.7
+      },
+      "indicator_courses": {
+        "CSC10008": 1.0,
+        "CSC10007": 0.8,
+        "CSC10009": 0.7,
+        "PHY00002": 0.4
+      },
+      "careers": [
+        "network_engineer",
+        "devops_cloud",
+        "security_analyst"
+      ]
+    },
+    "TGMT": {
+      "topic_profile": {
+        "vision_robotics": 1.0,
+        "ai_ml": 0.7,
+        "theory": 0.2
+      },
+      "indicator_courses": {
+        "MTH00030": 1.0,
+        "MTH00004": 0.6,
+        "PHY00001": 0.5,
+        "CSC14003": 0.7,
+        "CSC10002": 0.5
+      },
+      "careers": [
+        "cv_engineer",
+        "ai_engineer",
+        "researcher"
+      ]
+    }
+  },
+  "default_weights": {
+    "academic": 0.35,
+    "interest": 0.3,
+    "career": 0.15,
+    "progress": 0.2
+  }
+}

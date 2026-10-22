@@ -1,0 +1,4 @@
+# Phụ thuộc runtime cho hàm Python trên Vercel (backend chạy từ mã nguồn trong backend/src).
+ortools>=9.12
+pydantic>=2.7
+fastapi>=0.110

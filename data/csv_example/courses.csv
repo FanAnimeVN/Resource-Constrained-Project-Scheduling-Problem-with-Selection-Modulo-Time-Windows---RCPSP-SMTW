@@ -1,0 +1,13 @@
+id,name,credits,workload,tags,offering_terms,year_parity,min_accumulated_credits,final_term_only,min_gpa,historical_fail_rate,is_active
+IT001,Nhập môn lập trình,4,4,programming,FALL_ONLY,,,,,0.2,1
+IT002,Kỹ thuật lập trình,4,4,programming,SPRING_ONLY,,,,,,1
+IT003,Cấu trúc dữ liệu và giải thuật,4,5,programming;theory,HK1,,,,,0.28,1
+IT004,Cơ sở dữ liệu,4,3,data,HK2,,,,,,1
+IT005,Mạng máy tính,4,4,networks,EVERY_TERM,,,,,,1
+IT006,Nhập môn học máy,4,4,ai_ml,HK1,,,,,,1
+IT007,Phát triển ứng dụng web,4,4,web_mobile,EVERY_TERM,,,,,,1
+IT008,Khai thác dữ liệu,4,4,data,HK2,odd,,,,,1
+MA001,Vi tích phân,3,4,math,SUMMER_ALLOWED,,,,,,1
+MA002,Đại số tuyến tính,3,4,math,HK1;HK2;HE,,,,,,1
+GR001,Khóa luận tốt nghiệp,6,5,research,EVERY_TERM,,20,1,7.0,,1
+GR002,Thực tập tốt nghiệp,6,3,software,EVERY_TERM,,20,,,,1

@@ -1,0 +1,975 @@
+[
+  {
+    "id": "BAA00101",
+    "name": "Triết học Mác – Lênin",
+    "credits": 3,
+    "workload": 2,
+    "tags": [
+      "social"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "BAA00102",
+    "name": "Kinh tế chính trị Mác – Lênin",
+    "credits": 2,
+    "workload": 2,
+    "tags": [
+      "social"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "BAA00103",
+    "name": "Chủ nghĩa xã hội khoa học",
+    "credits": 2,
+    "workload": 2,
+    "tags": [
+      "social"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "BAA00104",
+    "name": "Lịch sử Đảng Cộng sản Việt Nam",
+    "credits": 2,
+    "workload": 2,
+    "tags": [
+      "social"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "BAA00003",
+    "name": "Tư tưởng Hồ Chí Minh",
+    "credits": 2,
+    "workload": 2,
+    "tags": [
+      "social"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "BAA00004",
+    "name": "Pháp luật đại cương",
+    "credits": 3,
+    "workload": 2,
+    "tags": [
+      "social"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "BAA00005",
+    "name": "Kinh tế đại cương",
+    "credits": 2,
+    "workload": 2,
+    "tags": [
+      "social",
+      "info_systems"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "BAA00006",
+    "name": "Tâm lý học đại cương",
+    "credits": 2,
+    "workload": 2,
+    "tags": [
+      "social"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "BAA00007",
+    "name": "Phương pháp luận sáng tạo",
+    "credits": 2,
+    "workload": 2,
+    "tags": [
+      "social"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "BAA00008",
+    "name": "Kỹ năng làm việc nhóm và giao tiếp",
+    "credits": 2,
+    "workload": 1,
+    "tags": [
+      "social"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "MTH00003",
+    "name": "Vi tích phân 1B",
+    "credits": 3,
+    "workload": 4,
+    "tags": [
+      "math"
+    ],
+    "source": "sample",
+    "historical_fail_rate": 0.22
+  },
+  {
+    "id": "MTH00004",
+    "name": "Vi tích phân 2B",
+    "credits": 3,
+    "workload": 4,
+    "tags": [
+      "math"
+    ],
+    "source": "sample",
+    "historical_fail_rate": 0.2
+  },
+  {
+    "id": "MTH00030",
+    "name": "Đại số tuyến tính",
+    "credits": 3,
+    "workload": 4,
+    "tags": [
+      "math",
+      "ai_ml",
+      "vision_robotics"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "MTH00040",
+    "name": "Xác suất thống kê",
+    "credits": 3,
+    "workload": 4,
+    "tags": [
+      "math",
+      "data",
+      "ai_ml"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "MTH00041",
+    "name": "Toán rời rạc",
+    "credits": 3,
+    "workload": 4,
+    "tags": [
+      "math",
+      "theory"
+    ],
+    "source": "sample",
+    "historical_fail_rate": 0.18
+  },
+  {
+    "id": "MTH00050",
+    "name": "Toán học tổ hợp",
+    "credits": 3,
+    "workload": 4,
+    "tags": [
+      "math",
+      "theory"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "PHY00001",
+    "name": "Vật lý đại cương 1 (Cơ – Nhiệt)",
+    "credits": 3,
+    "workload": 3,
+    "tags": [
+      "physics",
+      "vision_robotics"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "PHY00002",
+    "name": "Vật lý đại cương 2 (Điện từ – Quang)",
+    "credits": 3,
+    "workload": 3,
+    "tags": [
+      "physics",
+      "networks"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "PHY00081",
+    "name": "Thực hành Vật lý đại cương",
+    "credits": 2,
+    "workload": 2,
+    "tags": [
+      "physics"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CHE00001",
+    "name": "Hóa đại cương 1",
+    "credits": 3,
+    "workload": 3,
+    "tags": [
+      "science"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CHE00081",
+    "name": "Thực hành Hóa đại cương 1",
+    "credits": 2,
+    "workload": 2,
+    "tags": [
+      "science"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "BIO00001",
+    "name": "Sinh đại cương 1",
+    "credits": 3,
+    "workload": 3,
+    "tags": [
+      "science"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "BIO00081",
+    "name": "Thực hành Sinh đại cương 1",
+    "credits": 2,
+    "workload": 2,
+    "tags": [
+      "science"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "ENV00001",
+    "name": "Môi trường đại cương",
+    "credits": 2,
+    "workload": 2,
+    "tags": [
+      "science"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "MTH00057",
+    "name": "Toán ứng dụng và thống kê",
+    "credits": 3,
+    "workload": 3,
+    "tags": [
+      "math",
+      "data"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "MTH00060",
+    "name": "Giải tích số",
+    "credits": 3,
+    "workload": 4,
+    "tags": [
+      "math",
+      "theory"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "MTH00061",
+    "name": "Quy hoạch tuyến tính",
+    "credits": 3,
+    "workload": 3,
+    "tags": [
+      "math",
+      "theory",
+      "ai_ml"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC00004",
+    "name": "Nhập môn Công nghệ thông tin",
+    "credits": 4,
+    "workload": 2,
+    "tags": [
+      "software"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC10001",
+    "name": "Nhập môn lập trình",
+    "credits": 4,
+    "workload": 4,
+    "tags": [
+      "programming",
+      "software"
+    ],
+    "source": "fit.hcmus.edu.vn (K2022 danh sách tiên quyết/học trước)"
+  },
+  {
+    "id": "CSC10002",
+    "name": "Kỹ thuật lập trình",
+    "credits": 4,
+    "workload": 4,
+    "tags": [
+      "programming",
+      "software"
+    ],
+    "source": "fit.hcmus.edu.vn (K2022 danh sách tiên quyết/học trước)",
+    "historical_fail_rate": 0.2
+  },
+  {
+    "id": "CSC10003",
+    "name": "Phương pháp lập trình hướng đối tượng",
+    "credits": 4,
+    "workload": 4,
+    "tags": [
+      "programming",
+      "software"
+    ],
+    "source": "fit.hcmus.edu.vn (K2022 danh sách tiên quyết/học trước)"
+  },
+  {
+    "id": "CSC10004",
+    "name": "Cấu trúc dữ liệu và giải thuật",
+    "credits": 4,
+    "workload": 5,
+    "tags": [
+      "programming",
+      "theory"
+    ],
+    "source": "fit.hcmus.edu.vn (K2022 danh sách tiên quyết/học trước)",
+    "historical_fail_rate": 0.28
+  },
+  {
+    "id": "CSC10006",
+    "name": "Cơ sở dữ liệu",
+    "credits": 4,
+    "workload": 3,
+    "tags": [
+      "data",
+      "info_systems"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC10007",
+    "name": "Hệ điều hành",
+    "credits": 4,
+    "workload": 4,
+    "tags": [
+      "systems"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC10008",
+    "name": "Mạng máy tính",
+    "credits": 4,
+    "workload": 4,
+    "tags": [
+      "networks",
+      "systems"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC10009",
+    "name": "Hệ thống máy tính",
+    "credits": 2,
+    "workload": 3,
+    "tags": [
+      "systems"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC13002",
+    "name": "Nhập môn công nghệ phần mềm",
+    "credits": 4,
+    "workload": 3,
+    "tags": [
+      "software"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC14003",
+    "name": "Cơ sở trí tuệ nhân tạo",
+    "credits": 4,
+    "workload": 4,
+    "tags": [
+      "ai_ml",
+      "theory"
+    ],
+    "source": "sample",
+    "historical_fail_rate": 0.15
+  },
+  {
+    "id": "CSC14005",
+    "name": "Nhập môn học máy",
+    "credits": 4,
+    "workload": 4,
+    "tags": [
+      "ai_ml",
+      "data"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC14007",
+    "name": "Phân tích và thiết kế thuật toán",
+    "credits": 4,
+    "workload": 5,
+    "tags": [
+      "theory"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC14008",
+    "name": "Tính toán song song và phân tán",
+    "credits": 4,
+    "workload": 4,
+    "tags": [
+      "systems",
+      "theory"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC14120",
+    "name": "Học sâu",
+    "credits": 4,
+    "workload": 5,
+    "tags": [
+      "ai_ml"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC14122",
+    "name": "Xử lý ngôn ngữ tự nhiên",
+    "credits": 4,
+    "workload": 4,
+    "tags": [
+      "ai_ml",
+      "data"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC14123",
+    "name": "Khai thác dữ liệu",
+    "credits": 4,
+    "workload": 4,
+    "tags": [
+      "data",
+      "info_systems"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC14124",
+    "name": "Mật mã học",
+    "credits": 4,
+    "workload": 4,
+    "tags": [
+      "security",
+      "theory"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC14125",
+    "name": "Lập trình thi đấu nâng cao",
+    "credits": 4,
+    "workload": 5,
+    "tags": [
+      "theory",
+      "programming"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC14126",
+    "name": "Học tăng cường",
+    "credits": 4,
+    "workload": 5,
+    "tags": [
+      "ai_ml"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC14201",
+    "name": "Biểu diễn tri thức và suy luận",
+    "credits": 4,
+    "workload": 4,
+    "tags": [
+      "ai_ml",
+      "theory"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC14202",
+    "name": "Khai thác dữ liệu và ứng dụng",
+    "credits": 4,
+    "workload": 4,
+    "tags": [
+      "data"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC14203",
+    "name": "Hệ hỗ trợ ra quyết định",
+    "credits": 4,
+    "workload": 3,
+    "tags": [
+      "data",
+      "info_systems"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC14204",
+    "name": "Hệ chuyên gia",
+    "credits": 4,
+    "workload": 3,
+    "tags": [
+      "ai_ml"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC14205",
+    "name": "Khoa học dữ liệu ứng dụng",
+    "credits": 4,
+    "workload": 3,
+    "tags": [
+      "data",
+      "ai_ml"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC14206",
+    "name": "Web ngữ nghĩa",
+    "credits": 4,
+    "workload": 3,
+    "tags": [
+      "data",
+      "web_mobile"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC13003",
+    "name": "Kiểm thử phần mềm",
+    "credits": 4,
+    "workload": 3,
+    "tags": [
+      "software"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC13004",
+    "name": "Phân tích thiết kế phần mềm",
+    "credits": 4,
+    "workload": 3,
+    "tags": [
+      "software"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC13005",
+    "name": "Quản lý dự án phần mềm",
+    "credits": 4,
+    "workload": 3,
+    "tags": [
+      "software",
+      "info_systems"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC13008",
+    "name": "Phát triển ứng dụng web",
+    "credits": 4,
+    "workload": 4,
+    "tags": [
+      "web_mobile",
+      "software"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC13009",
+    "name": "Phát triển ứng dụng di động",
+    "credits": 4,
+    "workload": 4,
+    "tags": [
+      "web_mobile",
+      "software"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC13010",
+    "name": "Kiến trúc phần mềm",
+    "credits": 4,
+    "workload": 4,
+    "tags": [
+      "software"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC13011",
+    "name": "DevOps và điện toán đám mây",
+    "credits": 4,
+    "workload": 4,
+    "tags": [
+      "systems",
+      "software",
+      "networks"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC13012",
+    "name": "Mẫu thiết kế hướng đối tượng",
+    "credits": 4,
+    "workload": 3,
+    "tags": [
+      "software",
+      "programming"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC13013",
+    "name": "Đồ án công nghệ phần mềm",
+    "credits": 4,
+    "workload": 5,
+    "tags": [
+      "software"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC12001",
+    "name": "Hệ quản trị cơ sở dữ liệu",
+    "credits": 4,
+    "workload": 4,
+    "tags": [
+      "data",
+      "info_systems"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC12002",
+    "name": "Phân tích thiết kế hệ thống thông tin",
+    "credits": 4,
+    "workload": 3,
+    "tags": [
+      "info_systems"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC12003",
+    "name": "Cơ sở dữ liệu nâng cao",
+    "credits": 4,
+    "workload": 4,
+    "tags": [
+      "data",
+      "info_systems"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC12004",
+    "name": "Hệ thống hoạch định nguồn lực doanh nghiệp (ERP)",
+    "credits": 4,
+    "workload": 3,
+    "tags": [
+      "info_systems"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC12005",
+    "name": "Kho dữ liệu và OLAP",
+    "credits": 4,
+    "workload": 4,
+    "tags": [
+      "data",
+      "info_systems"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC12006",
+    "name": "An toàn và bảo mật dữ liệu trong HTTT",
+    "credits": 4,
+    "workload": 4,
+    "tags": [
+      "security",
+      "info_systems"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC12007",
+    "name": "Thương mại điện tử",
+    "credits": 4,
+    "workload": 3,
+    "tags": [
+      "info_systems",
+      "web_mobile"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC11001",
+    "name": "Lập trình mạng",
+    "credits": 4,
+    "workload": 4,
+    "tags": [
+      "networks",
+      "programming"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC11002",
+    "name": "Mạng máy tính nâng cao",
+    "credits": 4,
+    "workload": 4,
+    "tags": [
+      "networks"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC11003",
+    "name": "Hệ thống viễn thông",
+    "credits": 4,
+    "workload": 3,
+    "tags": [
+      "networks"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC11004",
+    "name": "An ninh mạng",
+    "credits": 4,
+    "workload": 4,
+    "tags": [
+      "security",
+      "networks"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC11005",
+    "name": "Quản trị mạng",
+    "credits": 4,
+    "workload": 3,
+    "tags": [
+      "networks",
+      "systems"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC11006",
+    "name": "Điện toán đám mây",
+    "credits": 4,
+    "workload": 4,
+    "tags": [
+      "systems",
+      "networks"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC11007",
+    "name": "Internet vạn vật (IoT)",
+    "credits": 4,
+    "workload": 4,
+    "tags": [
+      "networks",
+      "vision_robotics"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC11008",
+    "name": "Mạng không dây và di động",
+    "credits": 4,
+    "workload": 3,
+    "tags": [
+      "networks"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC16001",
+    "name": "Xử lý ảnh số",
+    "credits": 4,
+    "workload": 4,
+    "tags": [
+      "vision_robotics",
+      "ai_ml"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC16002",
+    "name": "Thị giác máy tính",
+    "credits": 4,
+    "workload": 5,
+    "tags": [
+      "vision_robotics",
+      "ai_ml"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC16003",
+    "name": "Nhập môn robot học",
+    "credits": 4,
+    "workload": 4,
+    "tags": [
+      "vision_robotics",
+      "systems"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC16004",
+    "name": "Thị giác máy tính 3D",
+    "credits": 4,
+    "workload": 5,
+    "tags": [
+      "vision_robotics"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC16005",
+    "name": "Robot tự hành",
+    "credits": 4,
+    "workload": 5,
+    "tags": [
+      "vision_robotics"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC16006",
+    "name": "Đồ họa máy tính",
+    "credits": 4,
+    "workload": 4,
+    "tags": [
+      "vision_robotics",
+      "web_mobile"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC16007",
+    "name": "Thực tế ảo và thực tế tăng cường",
+    "credits": 4,
+    "workload": 4,
+    "tags": [
+      "vision_robotics",
+      "web_mobile"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC00010",
+    "name": "Kỹ năng nghề nghiệp CNTT",
+    "credits": 2,
+    "workload": 2,
+    "tags": [
+      "software"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC00011",
+    "name": "Khởi nghiệp công nghệ",
+    "credits": 2,
+    "workload": 2,
+    "tags": [
+      "info_systems"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC13014",
+    "name": "Lập trình Python cho khoa học dữ liệu",
+    "credits": 4,
+    "workload": 3,
+    "tags": [
+      "programming",
+      "data"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "BAA00011",
+    "name": "Tiếng Anh chuyên ngành CNTT",
+    "credits": 3,
+    "workload": 2,
+    "tags": [
+      "social"
+    ],
+    "source": "sample"
+  },
+  {
+    "id": "CSC10251",
+    "name": "Khóa luận tốt nghiệp",
+    "credits": 10,
+    "workload": 5,
+    "tags": [
+      "research"
+    ],
+    "source": "sample",
+    "min_accumulated_credits": 110,
+    "min_gpa": 7.0,
+    "final_term_only": true
+  },
+  {
+    "id": "CSC10252",
+    "name": "Thực tập tốt nghiệp",
+    "credits": 4,
+    "workload": 3,
+    "tags": [
+      "software"
+    ],
+    "source": "sample",
+    "min_accumulated_credits": 100
+  },
+  {
+    "id": "CSC10253",
+    "name": "Đồ án tốt nghiệp",
+    "credits": 6,
+    "workload": 5,
+    "tags": [
+      "software"
+    ],
+    "source": "sample",
+    "min_accumulated_credits": 100
+  }
+]

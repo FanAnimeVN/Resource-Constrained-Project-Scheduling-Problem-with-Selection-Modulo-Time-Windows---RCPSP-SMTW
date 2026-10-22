@@ -1,0 +1,5 @@
+id,name,parent,rule,required_credits,k,specialization,specialization_group,kind
+DC,Đại cương,,ALL_MANDATORY,6,,,,general
+CSN,Cơ sở ngành,,ALL_MANDATORY,16,,,,foundation
+TC,Tự chọn,,MIN_CREDITS,8,,,,free
+TN,Tốt nghiệp,,MIN_CREDITS,6,,,,graduation
