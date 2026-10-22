@@ -1,0 +1,204 @@
+{
+  "id": "sv02",
+  "name": "Trần Thu Bình (K2025)",
+  "cohort_year": 2025,
+  "curriculum_id": "CNTT_K2020",
+  "next_term": {
+    "year": 2026,
+    "kind": "HK2"
+  },
+  "records": [
+    {
+      "course": "BAA00101",
+      "status": "PASSED",
+      "term": {
+        "year": 2025,
+        "kind": "HK1"
+      },
+      "grade": 7.2
+    },
+    {
+      "course": "MTH00003",
+      "status": "PASSED",
+      "term": {
+        "year": 2025,
+        "kind": "HK1"
+      },
+      "grade": 8.0
+    },
+    {
+      "course": "MTH00030",
+      "status": "PASSED",
+      "term": {
+        "year": 2025,
+        "kind": "HK1"
+      },
+      "grade": 8.8
+    },
+    {
+      "course": "PHY00001",
+      "status": "PASSED",
+      "term": {
+        "year": 2025,
+        "kind": "HK1"
+      },
+      "grade": 7.6
+    },
+    {
+      "course": "CSC10001",
+      "status": "PASSED",
+      "term": {
+        "year": 2025,
+        "kind": "HK1"
+      },
+      "grade": 9.0
+    },
+    {
+      "course": "CSC00004",
+      "status": "PASSED",
+      "term": {
+        "year": 2025,
+        "kind": "HK1"
+      },
+      "grade": 7.2
+    },
+    {
+      "course": "BAA00102",
+      "status": "PASSED",
+      "term": {
+        "year": 2025,
+        "kind": "HK2"
+      },
+      "grade": 6.8
+    },
+    {
+      "course": "MTH00004",
+      "status": "PASSED",
+      "term": {
+        "year": 2025,
+        "kind": "HK2"
+      },
+      "grade": 7.6
+    },
+    {
+      "course": "MTH00041",
+      "status": "PASSED",
+      "term": {
+        "year": 2025,
+        "kind": "HK2"
+      },
+      "grade": 8.4
+    },
+    {
+      "course": "PHY00002",
+      "status": "PASSED",
+      "term": {
+        "year": 2025,
+        "kind": "HK2"
+      },
+      "grade": 7.2
+    },
+    {
+      "course": "PHY00081",
+      "status": "PASSED",
+      "term": {
+        "year": 2025,
+        "kind": "HK2"
+      },
+      "grade": 8.0
+    },
+    {
+      "course": "CSC10002",
+      "status": "PASSED",
+      "term": {
+        "year": 2025,
+        "kind": "HK2"
+      },
+      "grade": 8.8
+    },
+    {
+      "course": "BAA00004",
+      "status": "PASSED",
+      "term": {
+        "year": 2025,
+        "kind": "HK2"
+      },
+      "grade": 7.6
+    },
+    {
+      "course": "BAA00103",
+      "status": "IN_PROGRESS",
+      "term": {
+        "year": 2026,
+        "kind": "HK1"
+      }
+    },
+    {
+      "course": "MTH00040",
+      "status": "IN_PROGRESS",
+      "term": {
+        "year": 2026,
+        "kind": "HK1"
+      }
+    },
+    {
+      "course": "MTH00050",
+      "status": "IN_PROGRESS",
+      "term": {
+        "year": 2026,
+        "kind": "HK1"
+      }
+    },
+    {
+      "course": "CSC10003",
+      "status": "IN_PROGRESS",
+      "term": {
+        "year": 2026,
+        "kind": "HK1"
+      }
+    },
+    {
+      "course": "CSC10004",
+      "status": "IN_PROGRESS",
+      "term": {
+        "year": 2026,
+        "kind": "HK1"
+      }
+    },
+    {
+      "course": "CSC10009",
+      "status": "IN_PROGRESS",
+      "term": {
+        "year": 2026,
+        "kind": "HK1"
+      }
+    },
+    {
+      "course": "CHE00001",
+      "status": "IN_PROGRESS",
+      "term": {
+        "year": 2026,
+        "kind": "HK1"
+      }
+    },
+    {
+      "course": "CHE00081",
+      "status": "IN_PROGRESS",
+      "term": {
+        "year": 2026,
+        "kind": "HK1"
+      }
+    }
+  ],
+  "interests": {
+    "software": 5,
+    "web_mobile": 5,
+    "data": 3,
+    "info_systems": 2
+  },
+  "career_goals": [
+    "backend_dev",
+    "frontend_mobile_dev"
+  ],
+  "note": "Đang học kỳ 3, chưa chọn chuyên ngành."
+}

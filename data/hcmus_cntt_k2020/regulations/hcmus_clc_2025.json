@@ -1,0 +1,17 @@
+{
+  "id": "hcmus_clc_2025",
+  "name": "Mức đăng ký 10–22 TC (thông báo ĐKHP 2025–2026, CT CLC)",
+  "min_credits_main": 10,
+  "max_credits_main": 22,
+  "max_credits_summer": 8,
+  "final_term_min_exempt": true,
+  "max_main_terms": 12,
+  "load_rules": [
+    {
+      "when": "academic_warning",
+      "min_credits_main": 10,
+      "max_credits_main": 14
+    }
+  ],
+  "source": "hcmus.edu.vn – thông báo ĐKHP HK1 2025–2026"
+}

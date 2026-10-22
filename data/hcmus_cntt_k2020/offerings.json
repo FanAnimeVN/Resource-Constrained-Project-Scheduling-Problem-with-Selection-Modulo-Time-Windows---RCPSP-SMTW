@@ -1,0 +1,592 @@
+[
+  {
+    "course": "BAA00101",
+    "terms": [
+      "HK1",
+      "HK2",
+      "HE"
+    ]
+  },
+  {
+    "course": "BAA00102",
+    "terms": [
+      "HK1",
+      "HK2",
+      "HE"
+    ]
+  },
+  {
+    "course": "BAA00103",
+    "terms": [
+      "HK1",
+      "HK2",
+      "HE"
+    ]
+  },
+  {
+    "course": "BAA00104",
+    "terms": [
+      "HK1",
+      "HK2",
+      "HE"
+    ]
+  },
+  {
+    "course": "BAA00003",
+    "terms": [
+      "HK1",
+      "HK2",
+      "HE"
+    ]
+  },
+  {
+    "course": "BAA00004",
+    "terms": [
+      "HK1",
+      "HK2",
+      "HE"
+    ]
+  },
+  {
+    "course": "BAA00005",
+    "terms": [
+      "HK1",
+      "HK2"
+    ]
+  },
+  {
+    "course": "BAA00006",
+    "terms": [
+      "HK1",
+      "HK2"
+    ]
+  },
+  {
+    "course": "BAA00007",
+    "terms": [
+      "HK1",
+      "HK2"
+    ]
+  },
+  {
+    "course": "BAA00008",
+    "terms": [
+      "HK1",
+      "HK2",
+      "HE"
+    ]
+  },
+  {
+    "course": "MTH00003",
+    "terms": [
+      "HK1",
+      "HE"
+    ]
+  },
+  {
+    "course": "MTH00004",
+    "terms": [
+      "HK2",
+      "HE"
+    ]
+  },
+  {
+    "course": "MTH00030",
+    "terms": [
+      "HK1",
+      "HK2",
+      "HE"
+    ]
+  },
+  {
+    "course": "MTH00040",
+    "terms": [
+      "HK1",
+      "HK2"
+    ]
+  },
+  {
+    "course": "MTH00041",
+    "terms": [
+      "HK2"
+    ]
+  },
+  {
+    "course": "MTH00050",
+    "terms": [
+      "HK1"
+    ]
+  },
+  {
+    "course": "PHY00001",
+    "terms": [
+      "HK1"
+    ]
+  },
+  {
+    "course": "PHY00002",
+    "terms": [
+      "HK2"
+    ]
+  },
+  {
+    "course": "PHY00081",
+    "terms": [
+      "HK2"
+    ]
+  },
+  {
+    "course": "CHE00001",
+    "terms": [
+      "HK1",
+      "HK2"
+    ]
+  },
+  {
+    "course": "CHE00081",
+    "terms": [
+      "HK1",
+      "HK2"
+    ]
+  },
+  {
+    "course": "BIO00001",
+    "terms": [
+      "HK1",
+      "HK2"
+    ]
+  },
+  {
+    "course": "BIO00081",
+    "terms": [
+      "HK1",
+      "HK2"
+    ]
+  },
+  {
+    "course": "ENV00001",
+    "terms": [
+      "HK1",
+      "HK2",
+      "HE"
+    ]
+  },
+  {
+    "course": "MTH00057",
+    "terms": [
+      "HK2"
+    ]
+  },
+  {
+    "course": "MTH00060",
+    "terms": [
+      "HK1"
+    ]
+  },
+  {
+    "course": "MTH00061",
+    "terms": [
+      "HK2"
+    ]
+  },
+  {
+    "course": "CSC00004",
+    "terms": [
+      "HK1"
+    ]
+  },
+  {
+    "course": "CSC10001",
+    "terms": [
+      "HK1",
+      "HE"
+    ]
+  },
+  {
+    "course": "CSC10002",
+    "terms": [
+      "HK2",
+      "HE"
+    ]
+  },
+  {
+    "course": "CSC10003",
+    "terms": [
+      "HK1"
+    ]
+  },
+  {
+    "course": "CSC10004",
+    "terms": [
+      "HK1"
+    ]
+  },
+  {
+    "course": "CSC10006",
+    "terms": [
+      "HK2"
+    ]
+  },
+  {
+    "course": "CSC10007",
+    "terms": [
+      "HK2"
+    ]
+  },
+  {
+    "course": "CSC10008",
+    "terms": [
+      "HK1"
+    ]
+  },
+  {
+    "course": "CSC10009",
+    "terms": [
+      "HK1",
+      "HK2"
+    ]
+  },
+  {
+    "course": "CSC13002",
+    "terms": [
+      "HK2"
+    ]
+  },
+  {
+    "course": "CSC14003",
+    "terms": [
+      "HK2"
+    ]
+  },
+  {
+    "course": "CSC14005",
+    "terms": [
+      "HK1"
+    ]
+  },
+  {
+    "course": "CSC14007",
+    "terms": [
+      "HK2"
+    ]
+  },
+  {
+    "course": "CSC14008",
+    "terms": [
+      "HK1"
+    ]
+  },
+  {
+    "course": "CSC14120",
+    "terms": [
+      "HK2"
+    ]
+  },
+  {
+    "course": "CSC14122",
+    "terms": [
+      "HK2"
+    ]
+  },
+  {
+    "course": "CSC14123",
+    "terms": [
+      "HK1"
+    ]
+  },
+  {
+    "course": "CSC14124",
+    "terms": [
+      "HK2"
+    ]
+  },
+  {
+    "course": "CSC14125",
+    "terms": [
+      "HK1"
+    ],
+    "year_parity": "odd"
+  },
+  {
+    "course": "CSC14126",
+    "terms": [
+      "HK1"
+    ]
+  },
+  {
+    "course": "CSC14201",
+    "terms": [
+      "HK1"
+    ]
+  },
+  {
+    "course": "CSC14202",
+    "terms": [
+      "HK2"
+    ]
+  },
+  {
+    "course": "CSC14203",
+    "terms": [
+      "HK1"
+    ]
+  },
+  {
+    "course": "CSC14204",
+    "terms": [
+      "HK2"
+    ]
+  },
+  {
+    "course": "CSC14205",
+    "terms": [
+      "HK1",
+      "HK2"
+    ]
+  },
+  {
+    "course": "CSC14206",
+    "terms": [
+      "HK2"
+    ]
+  },
+  {
+    "course": "CSC13003",
+    "terms": [
+      "HK1"
+    ]
+  },
+  {
+    "course": "CSC13004",
+    "terms": [
+      "HK1"
+    ]
+  },
+  {
+    "course": "CSC13005",
+    "terms": [
+      "HK2"
+    ]
+  },
+  {
+    "course": "CSC13008",
+    "terms": [
+      "HK1",
+      "HK2"
+    ]
+  },
+  {
+    "course": "CSC13009",
+    "terms": [
+      "HK2"
+    ]
+  },
+  {
+    "course": "CSC13010",
+    "terms": [
+      "HK2"
+    ]
+  },
+  {
+    "course": "CSC13011",
+    "terms": [
+      "HK1"
+    ]
+  },
+  {
+    "course": "CSC13012",
+    "terms": [
+      "HK1"
+    ]
+  },
+  {
+    "course": "CSC13013",
+    "terms": [
+      "HK2"
+    ]
+  },
+  {
+    "course": "CSC12001",
+    "terms": [
+      "HK1"
+    ]
+  },
+  {
+    "course": "CSC12002",
+    "terms": [
+      "HK2"
+    ]
+  },
+  {
+    "course": "CSC12003",
+    "terms": [
+      "HK2"
+    ]
+  },
+  {
+    "course": "CSC12004",
+    "terms": [
+      "HK1"
+    ]
+  },
+  {
+    "course": "CSC12005",
+    "terms": [
+      "HK1"
+    ]
+  },
+  {
+    "course": "CSC12006",
+    "terms": [
+      "HK2"
+    ]
+  },
+  {
+    "course": "CSC12007",
+    "terms": [
+      "HK2"
+    ]
+  },
+  {
+    "course": "CSC11001",
+    "terms": [
+      "HK2"
+    ]
+  },
+  {
+    "course": "CSC11002",
+    "terms": [
+      "HK2"
+    ]
+  },
+  {
+    "course": "CSC11003",
+    "terms": [
+      "HK1"
+    ]
+  },
+  {
+    "course": "CSC11004",
+    "terms": [
+      "HK1"
+    ]
+  },
+  {
+    "course": "CSC11005",
+    "terms": [
+      "HK1",
+      "HK2"
+    ]
+  },
+  {
+    "course": "CSC11006",
+    "terms": [
+      "HK1"
+    ]
+  },
+  {
+    "course": "CSC11007",
+    "terms": [
+      "HK2"
+    ]
+  },
+  {
+    "course": "CSC11008",
+    "terms": [
+      "HK2"
+    ]
+  },
+  {
+    "course": "CSC16001",
+    "terms": [
+      "HK1"
+    ]
+  },
+  {
+    "course": "CSC16002",
+    "terms": [
+      "HK2"
+    ]
+  },
+  {
+    "course": "CSC16003",
+    "terms": [
+      "HK1"
+    ]
+  },
+  {
+    "course": "CSC16004",
+    "terms": [
+      "HK1"
+    ]
+  },
+  {
+    "course": "CSC16005",
+    "terms": [
+      "HK2"
+    ]
+  },
+  {
+    "course": "CSC16006",
+    "terms": [
+      "HK2"
+    ]
+  },
+  {
+    "course": "CSC16007",
+    "terms": [
+      "HK1"
+    ]
+  },
+  {
+    "course": "CSC00010",
+    "terms": [
+      "HK1",
+      "HK2",
+      "HE"
+    ]
+  },
+  {
+    "course": "CSC00011",
+    "terms": [
+      "HK1",
+      "HK2"
+    ]
+  },
+  {
+    "course": "CSC13014",
+    "terms": [
+      "HK1",
+      "HK2"
+    ]
+  },
+  {
+    "course": "BAA00011",
+    "terms": [
+      "HK1",
+      "HK2"
+    ]
+  },
+  {
+    "course": "CSC10251",
+    "terms": [
+      "HK1",
+      "HK2"
+    ]
+  },
+  {
+    "course": "CSC10252",
+    "terms": [
+      "HK1",
+      "HK2",
+      "HE"
+    ]
+  },
+  {
+    "course": "CSC10253",
+    "terms": [
+      "HK1",
+      "HK2"
+    ]
+  }
+]

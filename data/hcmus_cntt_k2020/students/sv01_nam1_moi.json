@@ -1,0 +1,22 @@
+{
+  "id": "sv01",
+  "name": "Nguyễn Minh An (tân sinh viên K2026)",
+  "cohort_year": 2026,
+  "curriculum_id": "CNTT_K2020",
+  "next_term": {
+    "year": 2026,
+    "kind": "HK1"
+  },
+  "records": [],
+  "interests": {
+    "ai_ml": 5,
+    "data": 4,
+    "theory": 3,
+    "software": 2
+  },
+  "career_goals": [
+    "ai_engineer",
+    "data_scientist"
+  ],
+  "note": "Tân sinh viên, lập lộ trình từ đầu khóa."
+}

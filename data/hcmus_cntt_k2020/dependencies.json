@@ -1,0 +1,458 @@
+[
+  {
+    "source": "BAA00101",
+    "target": "BAA00102",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "BAA00102",
+    "target": "BAA00103",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "BAA00103",
+    "target": "BAA00104",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "BAA00103",
+    "target": "BAA00003",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "MTH00003",
+    "target": "MTH00004",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "MTH00003",
+    "target": "MTH00040",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "MTH00041",
+    "target": "MTH00050",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "PHY00001",
+    "target": "PHY00002",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "PHY00002",
+    "target": "PHY00081",
+    "type": "CO_REQUISITE",
+    "note": "sample"
+  },
+  {
+    "source": "CHE00001",
+    "target": "CHE00081",
+    "type": "CO_REQUISITE",
+    "note": "sample"
+  },
+  {
+    "source": "BIO00001",
+    "target": "BIO00081",
+    "type": "CO_REQUISITE",
+    "note": "sample"
+  },
+  {
+    "source": "MTH00040",
+    "target": "MTH00057",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "MTH00004",
+    "target": "MTH00060",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "MTH00030",
+    "target": "MTH00061",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "CSC10001",
+    "target": "CSC10002",
+    "type": "PRE_COURSE",
+    "note": "fit.hcmus.edu.vn (K2022 danh sách tiên quyết/học trước)"
+  },
+  {
+    "source": "CSC10001",
+    "target": "CSC10003",
+    "type": "PRE_COURSE",
+    "note": "fit.hcmus.edu.vn (K2022 danh sách tiên quyết/học trước)"
+  },
+  {
+    "source": "CSC10002",
+    "target": "CSC10004",
+    "type": "PRE_COURSE",
+    "note": "fit.hcmus.edu.vn (K2022 danh sách tiên quyết/học trước)"
+  },
+  {
+    "source": "CSC10004",
+    "target": "CSC10006",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "CSC10009",
+    "target": "CSC10007",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "CSC10001",
+    "target": "CSC10008",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "CSC10003",
+    "target": "CSC13002",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "CSC10004",
+    "target": "CSC14003",
+    "type": "PREREQUISITE",
+    "note": "sample"
+  },
+  {
+    "source": "MTH00041",
+    "target": "CSC14003",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "CSC14003",
+    "target": "CSC14005",
+    "type": "PREREQUISITE",
+    "note": "sample"
+  },
+  {
+    "source": "MTH00030",
+    "target": "CSC14005",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "CSC10004",
+    "target": "CSC14007",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "MTH00041",
+    "target": "CSC14007",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "CSC10007",
+    "target": "CSC14008",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "CSC14005",
+    "target": "CSC14120",
+    "type": "PREREQUISITE",
+    "note": "sample"
+  },
+  {
+    "source": "CSC14005",
+    "target": "CSC14122",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "CSC10006",
+    "target": "CSC14123",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "MTH00041",
+    "target": "CSC14124",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "CSC14007",
+    "target": "CSC14125",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "CSC14120",
+    "target": "CSC14126",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "CSC14003",
+    "target": "CSC14201",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "CSC10006",
+    "target": "CSC14202",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "CSC14202",
+    "target": "CSC14203",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "CSC14201",
+    "target": "CSC14204",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "MTH00040",
+    "target": "CSC14205",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "CSC14201",
+    "target": "CSC14206",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "CSC13002",
+    "target": "CSC13003",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "CSC13002",
+    "target": "CSC13004",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "CSC13002",
+    "target": "CSC13005",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "CSC10006",
+    "target": "CSC13008",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "CSC10003",
+    "target": "CSC13009",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "CSC13004",
+    "target": "CSC13010",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "CSC10008",
+    "target": "CSC13011",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "CSC10003",
+    "target": "CSC13012",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "CSC13004",
+    "target": "CSC13013",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "CSC13010",
+    "target": "CSC13013",
+    "type": "CO_REQUISITE",
+    "note": "sample"
+  },
+  {
+    "source": "CSC10006",
+    "target": "CSC12001",
+    "type": "PREREQUISITE",
+    "note": "sample"
+  },
+  {
+    "source": "CSC10006",
+    "target": "CSC12002",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "CSC12001",
+    "target": "CSC12003",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "CSC12002",
+    "target": "CSC12004",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "CSC12001",
+    "target": "CSC12005",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "CSC12001",
+    "target": "CSC12006",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "CSC12002",
+    "target": "CSC12007",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "CSC10008",
+    "target": "CSC11001",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "CSC10008",
+    "target": "CSC11002",
+    "type": "PREREQUISITE",
+    "note": "sample"
+  },
+  {
+    "source": "CSC10008",
+    "target": "CSC11003",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "CSC11002",
+    "target": "CSC11004",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "CSC10008",
+    "target": "CSC11005",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "CSC10007",
+    "target": "CSC11006",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "CSC10009",
+    "target": "CSC11007",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "CSC11003",
+    "target": "CSC11008",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "MTH00030",
+    "target": "CSC16001",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "CSC10002",
+    "target": "CSC16001",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "CSC16001",
+    "target": "CSC16002",
+    "type": "PREREQUISITE",
+    "note": "sample"
+  },
+  {
+    "source": "PHY00001",
+    "target": "CSC16003",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "CSC16002",
+    "target": "CSC16004",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "CSC16003",
+    "target": "CSC16005",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "MTH00030",
+    "target": "CSC16006",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "CSC16006",
+    "target": "CSC16007",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "CSC10001",
+    "target": "CSC13014",
+    "type": "PRE_COURSE",
+    "note": "sample"
+  },
+  {
+    "source": "CSC10251",
+    "target": "CSC10252",
+    "type": "MUTUALLY_EXCLUSIVE",
+    "note": "sample"
+  },
+  {
+    "source": "CSC10251",
+    "target": "CSC10253",
+    "type": "MUTUALLY_EXCLUSIVE",
+    "note": "sample"
+  }
+]

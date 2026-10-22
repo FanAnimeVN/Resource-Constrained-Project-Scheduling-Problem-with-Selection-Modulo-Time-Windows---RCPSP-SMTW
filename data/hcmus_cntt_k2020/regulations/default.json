@@ -1,0 +1,18 @@
+{
+  "id": "default",
+  "name": "Quy chế mặc định (theo đặc tả, AC-03)",
+  "min_credits_main": 14,
+  "max_credits_main": 24,
+  "max_credits_summer": 8,
+  "final_term_min_exempt": true,
+  "max_main_terms": 12,
+  "allow_empty_main_terms": false,
+  "load_rules": [
+    {
+      "when": "academic_warning",
+      "min_credits_main": 10,
+      "max_credits_main": 14
+    }
+  ],
+  "source": "sample – cần đối chiếu QĐ 1175/QĐ-KHTN"
+}

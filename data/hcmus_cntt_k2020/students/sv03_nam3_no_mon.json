@@ -1,0 +1,281 @@
+{
+  "id": "sv03",
+  "name": "Lê Hoàng Cường (K2024, nợ môn)",
+  "cohort_year": 2024,
+  "curriculum_id": "CNTT_K2020",
+  "next_term": {
+    "year": 2026,
+    "kind": "HK2"
+  },
+  "records": [
+    {
+      "course": "BAA00101",
+      "status": "PASSED",
+      "term": {
+        "year": 2024,
+        "kind": "HK1"
+      },
+      "grade": 5.4
+    },
+    {
+      "course": "MTH00003",
+      "status": "PASSED",
+      "term": {
+        "year": 2024,
+        "kind": "HK1"
+      },
+      "grade": 6.2
+    },
+    {
+      "course": "MTH00030",
+      "status": "PASSED",
+      "term": {
+        "year": 2024,
+        "kind": "HK1"
+      },
+      "grade": 7.0
+    },
+    {
+      "course": "PHY00001",
+      "status": "PASSED",
+      "term": {
+        "year": 2024,
+        "kind": "HK1"
+      },
+      "grade": 5.8
+    },
+    {
+      "course": "CSC10001",
+      "status": "PASSED",
+      "term": {
+        "year": 2024,
+        "kind": "HK1"
+      },
+      "grade": 6.6
+    },
+    {
+      "course": "CSC00004",
+      "status": "PASSED",
+      "term": {
+        "year": 2024,
+        "kind": "HK1"
+      },
+      "grade": 5.4
+    },
+    {
+      "course": "BAA00102",
+      "status": "PASSED",
+      "term": {
+        "year": 2024,
+        "kind": "HK2"
+      },
+      "grade": 5.0
+    },
+    {
+      "course": "MTH00004",
+      "status": "PASSED",
+      "term": {
+        "year": 2024,
+        "kind": "HK2"
+      },
+      "grade": 5.8
+    },
+    {
+      "course": "MTH00041",
+      "status": "FAILED",
+      "term": {
+        "year": 2024,
+        "kind": "HK2"
+      },
+      "grade": 3.5
+    },
+    {
+      "course": "PHY00002",
+      "status": "PASSED",
+      "term": {
+        "year": 2024,
+        "kind": "HK2"
+      },
+      "grade": 5.4
+    },
+    {
+      "course": "PHY00081",
+      "status": "PASSED",
+      "term": {
+        "year": 2024,
+        "kind": "HK2"
+      },
+      "grade": 6.2
+    },
+    {
+      "course": "CSC10002",
+      "status": "PASSED",
+      "term": {
+        "year": 2024,
+        "kind": "HK2"
+      },
+      "grade": 5.0
+    },
+    {
+      "course": "BAA00004",
+      "status": "PASSED",
+      "term": {
+        "year": 2024,
+        "kind": "HK2"
+      },
+      "grade": 5.8
+    },
+    {
+      "course": "BAA00103",
+      "status": "PASSED",
+      "term": {
+        "year": 2025,
+        "kind": "HK1"
+      },
+      "grade": 5.0
+    },
+    {
+      "course": "MTH00040",
+      "status": "PASSED",
+      "term": {
+        "year": 2025,
+        "kind": "HK1"
+      },
+      "grade": 5.6
+    },
+    {
+      "course": "MTH00050",
+      "status": "PASSED",
+      "term": {
+        "year": 2025,
+        "kind": "HK1"
+      },
+      "grade": 6.4
+    },
+    {
+      "course": "CSC10003",
+      "status": "PASSED",
+      "term": {
+        "year": 2025,
+        "kind": "HK1"
+      },
+      "grade": 5.2
+    },
+    {
+      "course": "CSC10004",
+      "status": "FAILED",
+      "term": {
+        "year": 2025,
+        "kind": "HK1"
+      },
+      "grade": 3.5
+    },
+    {
+      "course": "CSC10009",
+      "status": "PASSED",
+      "term": {
+        "year": 2025,
+        "kind": "HK1"
+      },
+      "grade": 5.0
+    },
+    {
+      "course": "CHE00001",
+      "status": "PASSED",
+      "term": {
+        "year": 2025,
+        "kind": "HK1"
+      },
+      "grade": 5.6
+    },
+    {
+      "course": "CHE00081",
+      "status": "PASSED",
+      "term": {
+        "year": 2025,
+        "kind": "HK1"
+      },
+      "grade": 6.4
+    },
+    {
+      "course": "BAA00104",
+      "status": "PASSED",
+      "term": {
+        "year": 2025,
+        "kind": "HK2"
+      },
+      "grade": 5.1
+    },
+    {
+      "course": "CSC10006",
+      "status": "PASSED",
+      "term": {
+        "year": 2025,
+        "kind": "HK2"
+      },
+      "grade": 5.9
+    },
+    {
+      "course": "CSC10007",
+      "status": "PASSED",
+      "term": {
+        "year": 2025,
+        "kind": "HK2"
+      },
+      "grade": 6.7
+    },
+    {
+      "course": "CSC13002",
+      "status": "PASSED",
+      "term": {
+        "year": 2025,
+        "kind": "HK2"
+      },
+      "grade": 5.5
+    },
+    {
+      "course": "BAA00003",
+      "status": "IN_PROGRESS",
+      "term": {
+        "year": 2026,
+        "kind": "HK1"
+      }
+    },
+    {
+      "course": "CSC10008",
+      "status": "IN_PROGRESS",
+      "term": {
+        "year": 2026,
+        "kind": "HK1"
+      }
+    },
+    {
+      "course": "CSC13003",
+      "status": "IN_PROGRESS",
+      "term": {
+        "year": 2026,
+        "kind": "HK1"
+      }
+    },
+    {
+      "course": "CSC13004",
+      "status": "IN_PROGRESS",
+      "term": {
+        "year": 2026,
+        "kind": "HK1"
+      }
+    }
+  ],
+  "academic_warning": true,
+  "declared_specialization": "CNPM",
+  "interests": {
+    "software": 4,
+    "web_mobile": 4,
+    "systems": 2
+  },
+  "career_goals": [
+    "backend_dev",
+    "qa_engineer"
+  ],
+  "note": "Rớt CTDL&GT và Toán rời rạc, đang bị cảnh báo học tập (tải 10–14 TC)."
+}
